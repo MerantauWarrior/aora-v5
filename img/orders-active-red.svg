@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>CCFA13E7-4377-43FF-AD89-B9014321B2E9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic/orders/white/pressed">
+            <g id="ic_orders">
+                <g id="Group-6" transform="translate(5.000000, 10.000000)">
+                    <path d="M5,17 L19,17 L19,1 L5,1 C5,2.33014518 5,2.72533838 5,4.98257081 L5,17 Z" id="Rectangle-11" stroke="#D20A11" stroke-width="2"></path>
+                    <path d="M19,11 L19,17 L26,17 C27.6568542,17 29,15.6568542 29,14 C29,12.3431458 27.6568542,11 26,11 L19,11 Z" id="Rectangle-5" stroke="#D20A11" stroke-width="2"></path>
+                    <path d="M19,6 L19,11 L26,11 L26,9 C26,7.34314575 24.6568542,6 23,6 L19,6 Z" id="Rectangle-5" stroke="#D20A11" stroke-width="2"></path>
+                    <circle id="Oval-2" fill="#D20A11" cx="11" cy="18" r="3"></circle>
+                    <circle id="Oval-2" fill="#D20A11" cx="23" cy="18" r="3"></circle>
+                    <path d="M9,5.80424764 L9,12.1957524 L14.1132038,9 L9,5.80424764 Z" id="Rectangle-4" stroke="#D20A11" stroke-width="2"></path>
+                    <path d="M0.368902869,8.93150353 L13,8.93150353" id="Path-2" stroke="#D20A11" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
