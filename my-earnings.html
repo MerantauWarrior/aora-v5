@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/new-style.css" rel="stylesheet">
+        <link href="css/header-footer.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+    <header class="main-header">
+        <div class="main-header-mobile">
+            <div class="main-header-mobile__open">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main-header-mobile__logo"><img src="imgs/new-logo.svg" alt="aora"></div>
+            <div class="main-header-mobile__menu">
+                <div class="main-header-mobile__menu-block">
+                    <a href="#" class="main-header-mobile__menu-link js_open_modal" data-modal="#login_modal">LOG IN | SIGN UP</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="https://aora.cf" class="main-header-mobile__menu-link">HOME</a>
+                    <a href="how-aora-work" class="main-header-mobile__menu-link">HOW AORA WORKS</a>
+                    <a href="about" class="main-header-mobile__menu-link">ABOUT US</a>
+                    <a class="main-header-mobile__menu-link" href="user/invite">REFER A FRIEND</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="setting" class="main-header-mobile__menu-link">MY ACCOUNT</a>
+                    <a href="orders" class="main-header-mobile__menu-link">ORDERS</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="contact" class="main-header-mobile__menu-link">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <ul class="page-header__top-list">
+            <li class="page-header__top-list-item js_open_modal" data-modal="#login_modal">
+                <a href="#" class="page-header__top-list-link">
+                    <img src="imgs/account.svg" alt="">
+                    <span class="page-header__top-list-text">Log In | Sign Up</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item">
+                <a href="#" class="page-header__top-list-link">
+                    <img src="imgs/orders.svg" alt="">
+                    <span class="page-header__top-list-text">Orders</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item">
+                <a href="cart" class="page-header__top-list-link">
+                    <img src="imgs/cart.svg" alt="">
+                    <span class="page-header__top-list-text">Cart</span>
+                    <span class="page-header__top-list-indicator">2</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item">
+                <a href="cart" class="page-header__top-list-link">
+                    <img src="imgs/icon-notifications.svg" alt="">
+                    <span class="page-header__top-list-notifications">9</span>
+                </a>
+            </li>
+        </ul>
+        <div class="main-header__controls">
+            <div class="main-header__logo"><a href="https://aora.cf"><img src="imgs/new-logo.svg" alt="aora"></a></div>
+            <nav class="main-header__menu">
+                <a class="main-header__menu-link" href="https://aora.cf">HOME</a>
+                <a class="main-header__menu-link " href="#how-aora-work">HOW AORA WORKS</a>
+                <a class="main-header__menu-link " href="#how-aora-work">
+                    <img src="imgs/icon-tel.svg" class="main-header__menu-tel">Contact Us</a>
+            </nav>
+            <form id="header_search_form" class="main-header__search main-header__search-landing" method="post" action="result">
+                <input type="text" name="link" id="search" class="inp-main-header__search" placeholder="Paste Product URL Here">
+                <button type="submit" class="submit-main-header__search"></button>
+            </form>
+        </div>
+    </header>
+
+        <div class="main-wrap bg-white account">
+            <div class="container py-lg-5 pt-4 pb-0 ">
+                <h5 class="text-lg-center font-weight-bold mb-md-5 mb-4">Account</h5>
+                <div class="block__my-earnings row">
+                    <div class="col-3 pl-0 d-none d-lg-block">
+                        <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <ul class="main-tabs">
+                                <li><a class="nav-link" id="v-pills-account-tab" data-toggle="pill" href="#v-pills-account" role="tab" aria-controls="v-pills-account" aria-selected="true">My Account</a></li>
+                                <li>
+                                    <a class="nav-link" id="v-pills-my-orders-tab" data-toggle="pill" href="#v-pills-my-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false">My Orders</a>
+                                    <ul class="sub-tabs">
+                                        <li>
+                                            <a class="nav-link" id="v-pills-quotes-tab" data-toggle="pill" href="#v-pills-quotes" role="tab" aria-controls="v-pills-orders" aria-selected="false">Quotes in Process</a>
+                                            <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false">Orders</a>
+                                            <a class="nav-link" id="v-pills-track-order-tab" data-toggle="pill" href="#v-pills-track-order" role="tab" aria-controls="v-pills-orders" aria-selected="false">Track my Orders</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav-link" id="v-pills-marketplace-tab" data-toggle="pill" href="#v-pills-marketplace" role="tab" aria-controls="v-pills-marketplace" aria-selected="false">My Marketplace</a></li>
+                                <li><a class="nav-link active" id="v-pills-earnings-tab" data-toggle="pill" href="#v-pills-earnings" role="tab" aria-controls="v-pills-earnings" aria-selected="false">My Earnings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-12 px-0">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                                My Account</div>
+                            <div class="tab-pane fade" id="v-pills-my-orders" role="tabpanel" aria-labelledby="v-pills-my-orders-tab">My Order</div>
+                            <div class="tab-pane fade" id="v-pills-quotes" role="tabpanel" aria-labelledby="v-pills-my-quotes-tab">Quotes in process</div>
+                            <div class="tab-pane fade" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab">orders</div>
+                            <div class="tab-pane fade" id="v-pills-track-order" role="tabpanel" aria-labelledby="v-pills-track-order-tab">Track my orders</div>
+                            <div class="tab-pane fade" id="v-pills-marketplace" role="tabpanel" aria-labelledby="v-pills-marketplace-tab">My Marketplace</div>
+                            <!-- My Earnings -->
+                            <div class="tab-pane fade show active" id="v-pills-earnings" role="tabpanel" aria-labelledby="v-pills-earnings-tab">
+                                <div class="tab-heading">My Earnings</div>
+                                <div class="content-desc content-desc-1 px-lg-3 px-0">
+                                    <div class="py-3 px-md-2 px-3 bg-sm-white">
+                                        <p class="text-dark">A little goes a long way. Your insights and thoughts into your posts has resulted in 103 informed purchase decisions. </p>
+                                        <p class="text-dark">That is why with every purchase made through your post, you get to enjoy a 1% rebate of the product sold. Take it as our little way of thanking you for contributing to the community. </p>
+                                    </div>
+                                    <div class="my-points__block py-md-5 py-4 d-flex justify-content-center align-items-start">
+                                        <p class="text-dark mr-md-5 mr-0 pt-lg-2 pb-lg-0 pb-2 font-weight-bold">I Am Viewing My Points in</p>
+                                        <div class="sect__right">
+                                            <div class="dropdown">
+                                                <p class="sgd-drop">Singapore Dollars (SGD $)</p>
+                                                <p class="usd-drop">United States Dollars (USD $)</p>
+                                                <i class="ml-3 fa fa-caret-down"></i>
+                                            </div>
+                                            <p class="pt-2 text-center text-blue font-weight-bold aora-point">(One AORA Point = SGD $1.00)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="earning-status mt-4 py-lg-4 p-3">
+                                        <div class="top-up d-flex d-lg-none justify-content-center">
+                                            Total Earnings:&nbsp; <strong>500 AORA Points (SGD $49.30)</strong>
+                                        </div>
+                                        <div class="top mt-lg-0 mt-3">
+                                            <img src="img/earning.png" alt="">
+                                            <div class="status d-lg-flex d-none">
+                                                <p>Lifetime Earnings</p>
+                                                <div class="amount">
+                                                    100 AORA Points (SGD $19.10)
+                                                </div>
+                                            </div>
+                                            <div class="status">
+                                                <p>Available Balance</p>
+                                                <div class="amount">
+                                                    100 AORA Points (SGD $19.10)
+                                                </div>
+                                            </div>
+                                            <div class="status d-lg-flex d-none">
+                                                <p>Pending Balance</p>
+                                                <div class="amount">
+                                                    100 AORA Points (SGD $19.10)
+                                                </div>
+                                            </div>
+                                            <div class="status d-lg-flex d-none">
+                                                <p>Redeemed Amount</p>
+                                                <div class="amount">
+                                                    100 AORA Points (SGD $19.10)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bottom d-flex justify-content-center">
+                                            <button id="redeemPointBtn" class="btn btn--fill px-5" data-toggle="modal" data-target="#RedeemPointsModal">LIVING IN SINGAPORE? REDEEM YOUR POINTS IN CASH!</button>
+                                        </div>
+                                    </div>
+                                    <div class="earning-table__block">
+                                        <div class="earnings-table mt-4">
+                                            <div class="">
+                                                <table class="table mb-0 bg-sm-white">
+                                                    <thead>
+                                                    <th>Date</th>
+                                                    <th class="th-desc">Description</th>
+                                                    <th>Affliated Customer</th>
+                                                    <th>Amount</th>
+                                                    <th>available by</th>
+                                                    <th>status <sup class="status-modal-icon">
+                                                            <a class="pop-info" data-container="body" data-toggle="popover" data-placement="top" 
+                                                               data-content="Affiliated earnings will be successfully processed 30 days after the purchase has been made.">
+                                                                <i class="fa fa-info-circle"></i>
+                                                            </a></sup></th>
+                                                    <div class="cashback-text d-lg-none d-flex">Cashback Details</div>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="date">05 Oct 2018</td>
+                                                            <td class="desc">Pearl Drop Earrings in Turquoise Mint, Lar, Pearl Drop Earrings in Turquoise Mint</td>
+                                                            <td class="customer">Andrea Ingola</td>
+                                                            <td class="amount text-blue">$1.10</td>
+                                                            <td class="avail-by"><span class="d-md-none">Available By&nbsp;</span>10 Dec, 2018</td>
+                                                            <td class="td-status"><span class="d-md-none">Status:&nbsp;</span>Pending</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="date">05 Oct 2018</td>
+                                                            <td class="desc">Pearl Drop Earrings in Turquoise Mint, Lar, Pearl Drop Earrings in Turquoise Mint</td>
+                                                            <td class="customer">Andrea Ingola</td>
+                                                            <td class="amount text-blue">$1.10</td>
+                                                            <td class="avail-by"><span class="d-md-none">Available By&nbsp;</span>10 Dec, 2018</td>
+                                                            <td class="td-status"><span class="d-md-none">Status:&nbsp;</span>Pending</td>
+                                                        </tr><tr>
+                                                            <td class="date">05 Oct 2018</td>
+                                                            <td class="desc">Pearl Drop Earrings in Turquoise Mint, Lar, Pearl Drop Earrings in Turquoise Mint</td>
+                                                            <td class="customer">Andrea Ingola</td>
+                                                            <td class="amount text-blue">$1.10</td>
+                                                            <td class="avail-by"><span class="d-md-none">Available By&nbsp;</span>10 Dec, 2018</td>
+                                                            <td class="td-status"><span class="d-md-none">Status:&nbsp;</span>Pending</td>
+                                                        </tr><tr>
+                                                            <td class="date">05 Oct 2018</td>
+                                                            <td class="desc">Pearl Drop Earrings in Turquoise Mint, Lar, Pearl Drop Earrings in Turquoise Mint</td>
+                                                            <td class="customer">Andrea Ingola</td>
+                                                            <td class="amount text-blue">$1.10</td>
+                                                            <td class="avail-by"><span class="d-md-none">Available By&nbsp;</span>10 Dec, 2018</td>
+                                                            <td class="td-status"><span class="d-md-none">Status:&nbsp;</span>Pending</td>
+                                                        </tr><tr>
+                                                            <td class="date">05 Oct 2018</td>
+                                                            <td class="desc">Pearl Drop Earrings in Turquoise Mint, Lar, Pearl Drop Earrings in Turquoise Mint</td>
+                                                            <td class="customer">Andrea Ingola</td>
+                                                            <td class="amount text-blue">$1.10</td>
+                                                            <td class="avail-by"><span class="d-md-none">Available By&nbsp;</span>10 Dec, 2018</td>
+                                                            <td class="td-status"><span class="d-md-none">Status:&nbsp;</span>Pending</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-end">
+                                            <ul class="pagination">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span class="fa fa-angle-left "></span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link">1/17</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span class=" fa fa-angle-right"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+
+
+                                </div>  
+
+                                <div class="content content-desc-2 p-3 d-none">
+                                    <div class="earning-status d-lg-none mt-lg-4 mx-0  py-lg-4 p-3">
+                                        <div class="top-up d-flex justify-content-center">
+                                            Total Earnings:&nbsp; <strong>500 AORA Points (SGD $49.30)</strong>
+                                        </div>
+                                        <div class="top mt-lg-0 mt-3">
+                                            <img src="img/earning.png" alt="">
+                                            <div class="status">
+                                                <p>Available Balance</p>
+                                                <div class="amount">
+                                                    100 AORA Points (SGD $19.10)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add Bank Details -->
+                                    <div class="modal fade add-bank-details-modal" id="addDetailsModal" tabindex="-1" role="dialog" aria-labelledby="addDetailsModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <button type="button" id="goBackBtn" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <div class="modal-body py-5">
+
+                                                    <h4 class="mb-3">Your Bank Account Details</h4> 
+                                                    <form action="">
+                                                        <div class="form-group">
+                                                            <label for="bank">Name of Bank</label> 
+                                                            <select id="bank">
+                                                                <option value="hide">Select Bank</option>
+                                                                <option value="DBS / POSB Bank " rel="icon-temperature">DBS / POSB Bank </option>
+                                                                <option value="uobBank">UOB Bank</option>
+                                                                <option value="citibank">Citibank </option>
+                                                                <option value="mayBank">Maybank </option>
+                                                                <option value="scs">Standard Chartered Singapore </option>
+                                                                <option value="hsbc">HSBC Bank </option>
+                                                                <option value="ocbc">OCBC Bank </option>
+                                                            </select> 
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Account Holder Name</label>
+                                                            <input type="text" class="form-control" placeholder="Your Name, As Stated On Your Bank Records">
+                                                            <div class="error-text"></div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Bank Account Number (Without Hypen or Space)</label>
+                                                            <input type="text" class="form-control" placeholder="Your Name, As Stated On Your Bank Records">
+                                                        </div>
+                                                        <div class="d-flex justify-content-end mt-lg-5 mt-4">
+                                                            <a class="btn btn--blue" id="requestSubmittedBtn" data-toggle="modal" data-target="#requestSubmittedModal" data-dismiss="modal" aria-label="Close">SAVE</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="show-redeem-via">
+                                        <p class="text-dark font-weight-bold px-3 px-lg-0 ">Redeem via Bank Transfer </p>
+                                        <p class="px-3 px-lg-0 text-light-black font-family-work-sans font-weight-normal my-2">This will take up to 14 days to be successfully processed.</p>
+                                        <div class="px-3 px-lg-0 text-blue font-weight-bold mb-3">My Bank</div>
+
+                                        <div id="addBankDetailsBtn" class="text-light-black add-bank-btn mb-lg-4 mb-0 py-5 font-weight-bold"  data-toggle="modal" data-target="#addDetailsModal">
+                                            <div class="plus-text">+</div>
+                                            <div>Add Bank</div>
+                                        </div>
+                                        <div class="mb-lg-4 mb-0 my-bank__block position-relative d-flex justify-content-start align-items-stretch">
+                                            <div class="bank-logo">
+                                                <img src="img/uob-logo.png" alt="">
+                                            </div>
+                                            <div class="px-3 flex-fill d-flex flex-column justify-content-center align-items-start">
+                                                <p class="font-weight-bold text-dark">Francessca Ng Li Li </p>
+                                                <p class="text-light-black">********1234</p>
+                                            </div>
+                                            <div class="pr-4 edit-detail">
+                                                <a class="text-grey">Edit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="redemption">
+                                        <div class="font-family-work-sans">
+                                            <div class="font-weight-bold">Redemption Amount</div>
+                                            <div class="font-weight-500">(Minimum SGD $5)</div>
+                                        </div>
+                                        <form class="amount-form mt-3" action="">
+                                            <div class="form-group success">
+                                                <input class="form-control" type="text" name="amount" placeholder="E.g $15">
+                                            </div>
+                                            <button type="button" class="btn btn--fill">Redeem</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <!-- Redeem Points -->
+                                <div class="modal fade redeem-point-modal" id="RedeemPointsModal" tabindex="-1" role="dialog" aria-labelledby="RedeemPointsModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <button type="button" id="goBackBtn" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <div class="py-5 px-md-3 px-0">
+                                                    <p class=" px-md-5 px-3 mb-3 text-center text-pink font-weight-bold">Oops, we are unable to transfer your points into cash at the moment</p>   
+                                                    <p class="text-light-black text-center">Our AORA Points to Cash function is not available for countries outside of Singapore at the moment, but we will be looking to bring it to your country very soon!</p>
+                                                    <div class="btns d-flex justify-content-between mt-4">
+                                                        <button class="btn btn--grey mr-2 flex-fill" id="goBackBtn" data-dismiss="modal" aria-label="Close">Go back</button>
+                                                        <button class="btn btn--blue ml-2 flex-fill js-proceed-anyway" data-dismiss="modal" aria-label="Close">Proceed Anyway</button>
+                                                    </div>  
+                                                </div>
+                                                <div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <!-- Request Submitted -->
+                                <div class="modal fade request-submit-modal" id="requestSubmittedModal" tabindex="-1" role="dialog" aria-labelledby="requestSubmittedModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" id="goBackBtn" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="modal-body py-5 d-flex align-items-center flex-column ">
+                                                <h4>Withdrawal Request is Submitted!</h4> 
+                                                <div>
+                                                    <img src="img/request-submit.png" alt="" class="img-fluid" width="200">
+                                                </div>
+                                                <button class="btn btn--fill mt-4 mb-3">Continue Shopping</button>
+                                                <a href="" class="text-blue font-weight-bold">View withdrawal history</a>
+
+                                                <p class="mt-3 text-center">*You will be notified via email when the transfer is successful!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+         <footer class="new-footer">
+             <div class="new-footer__inner">
+                 <div class="new-footer__menu">
+                     <div class="new-footer__menu-item">
+                         <div class="new-footer-title">help</div>
+                         <ul class="new-footer__menu-list">
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">FAQs</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Prohibited Items</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Contact Us</a></li>
+                         </ul>
+                     </div>
+                     <div class="new-footer__menu-item">
+                         <div class="new-footer-title">company</div>
+                         <ul class="new-footer__menu-list">
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">About Us</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Blog</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Merchant Directory</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Privacy Policy</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Terms & Conditions</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="new-footer__icons">
+                     <div class="new-footer__icons-join">
+                         <div class="new-footer-title">join our community</div>
+                         <div class="new-footer__icons-join-items">
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/fb.svg" alt="facebook">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/insta.svg" alt="instagram">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/medium.svg" alt="medium">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/reddit.svg" alt="reddit">
+                             </a>
+                         </div>
+                     </div>
+                     <div class="new-footer__icons-payment">
+                         <div class="new-footer-title">our payment partners:</div>
+                         <div class="new-footer__icons-payment-items">
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/stripe.svg" alt="stripe"></a>
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/bit.svg" alt="bit"></a></br>
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/coin.svg" alt="coin"></a>
+                         </div>
+                     </div>
+                     <div class="new-footer__icons-powered">
+                         <div class="new-footer-title">powered by:</div>
+                         <a href="#" class="new-footer__icons-powered-item">
+                             <img src="imgs/footer/singapore.svg" alt="singapore post">
+                         </a>
+                     </div>
+                 </div>
+                 <div class="new-footer__accept">
+                     <div class="new-footer-title">we accept:</div>
+                     <div class="new-footer__accept-items">
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa1.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa2.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa3.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa4.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa5.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa6.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa7.svg" alt="pay-name"></a>
+                     </div>
+                 </div>
+             </div>
+         </footer>
+
+    <div class="hide" id="overlay"></div>
+
+
+    <!-- <button class="to-top" type="button">Наверх</button> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script type="text/javascript" src="js/masonry.min.js"></script>  
+    <script src="js/jquery.ellipsis.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/my-scripts.js"></script>
+
+</body>
+</html>

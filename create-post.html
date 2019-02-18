@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+      <link href="css/new-style.css" rel="stylesheet">
+      <link href="css/header-footer.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <header class="main-header">
+      <div class="main-header-mobile">
+        <div class="main-header-mobile__open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="main-header-mobile__logo"><img src="imgs/new-logo.svg" alt="aora"></div>
+        <div class="main-header-mobile__menu">
+          <div class="main-header-mobile__menu-block">
+            <a href="#" class="main-header-mobile__menu-link js_open_modal" data-modal="#login_modal">LOG IN | SIGN UP</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="https://aora.cf" class="main-header-mobile__menu-link">HOME</a>
+            <a href="how-aora-work" class="main-header-mobile__menu-link">HOW AORA WORKS</a>
+            <a href="about" class="main-header-mobile__menu-link">ABOUT US</a>
+            <a class="main-header-mobile__menu-link" href="user/invite">REFER A FRIEND</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="setting" class="main-header-mobile__menu-link">MY ACCOUNT</a>
+            <a href="orders" class="main-header-mobile__menu-link">ORDERS</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="contact" class="main-header-mobile__menu-link">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+      <ul class="page-header__top-list">
+        <li class="page-header__top-list-item js_open_modal" data-modal="#login_modal">
+          <a href="#" class="page-header__top-list-link">
+            <img src="imgs/account.svg" alt="">
+            <span class="page-header__top-list-text">Log In | Sign Up</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="#" class="page-header__top-list-link">
+            <img src="imgs/orders.svg" alt="">
+            <span class="page-header__top-list-text">Orders</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="cart" class="page-header__top-list-link">
+            <img src="imgs/cart.svg" alt="">
+            <span class="page-header__top-list-text">Cart</span>
+            <span class="page-header__top-list-indicator">2</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="cart" class="page-header__top-list-link">
+            <img src="imgs/icon-notifications.svg" alt="">
+            <span class="page-header__top-list-notifications">9</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-header__controls">
+        <div class="main-header__logo"><a href="https://aora.cf"><img src="imgs/new-logo.svg" alt="aora"></a></div>
+        <nav class="main-header__menu">
+          <a class="main-header__menu-link" href="https://aora.cf">HOME</a>
+          <a class="main-header__menu-link " href="#how-aora-work">HOW AORA WORKS</a>
+          <a class="main-header__menu-link " href="#how-aora-work">
+            <img src="imgs/icon-tel.svg" class="main-header__menu-tel">Contact Us</a>
+        </nav>
+        <form id="header_search_form" class="main-header__search main-header__search-landing" method="post" action="result">
+          <input type="text" name="link" id="search" class="inp-main-header__search" placeholder="Paste Product URL Here">
+          <button type="submit" class="submit-main-header__search"></button>
+        </form>
+      </div>
+    </header>
+
+        <div class="main-wrap create-post">
+            <div class="container py-lg-5 py-4">
+                <form>
+                    <div class="block__rounded p-lg-4 p-3 mb-4 ">
+                        <h5 class="text-center font-weight-bold mb-md-5 mb-5 pb-4">Create Post</h5>
+                        <div class="row">
+                            <div class="col-md-5 block__add-photo">
+                                <div class="add-photo input-group mb-3">
+                                    <div class="custom-file">
+                                        <label class="custom-file-label js-photo_submit1"  for="inputGroupFile01">
+                                            <div class="plus-text">+</div>
+                                            <p class="plus-text">ADD PHOTO</p>
+                                            <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                            <span class="photo_submit-delete d-none">Delete</span>
+                                        </label>
+                                      <!-- Delete Photo -->
+                                      <div class="modal fade deletePostModal" tabindex="-1" role="dialog"
+                                           aria-labelledby="deletePostModalLable" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-body">
+
+                                              <div class="d-flex justify-content-sm-start justify-content-center flex-sm-row flex-column ">
+                                                <img class="mr-sm-4 mr-0" src="img/delete-post.svg" alt="">
+                                                <div class="text-center text-sm-left">
+                                                  <h4 class="text-uppercase text-black font-weight-bold mb-0">Delete Post?</h4>
+                                                  <p class="mb-0 text-dark">Wiping this post off the face of the earth?</p>
+                                                  <p class=" text-dark">AORA will be sad to see it go.</p>
+
+                                                  <div class="d-flex justify-content-sm-start justify-content-center mt-3">
+                                                    <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back</button>
+                                                    <button class="text-uppercase btn btn--fill btn--delete-photo">Delete Post</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <img class="add-photo-img" src="img/aora-hi.png" alt="">
+
+                                </div>
+                                <div class="list__photo">
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit2"  for="inputGroupFile02">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile02"
+                                                        aria-describedby="inputGroupFileAddon02">
+                                              <span class="photo_submit-delete d-none">Delete</span>
+                                            </label>
+                                          <!-- Delete Photo -->
+                                          <div class="modal fade deletePostModal" tabindex="-1" role="dialog"
+                                               aria-labelledby="deletePostModalLable" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-body">
+
+                                                  <div class="d-flex justify-content-sm-start justify-content-center flex-sm-row flex-column ">
+                                                    <img class="mr-sm-4 mr-0" src="img/delete-post.svg" alt="">
+                                                    <div class="text-center text-sm-left">
+                                                      <h4 class="text-uppercase text-black font-weight-bold mb-0">Delete Post?</h4>
+                                                      <p class="mb-0 text-dark">Wiping this post off the face of the earth?</p>
+                                                      <p class=" text-dark">AORA will be sad to see it go.</p>
+
+                                                      <div class="d-flex justify-content-sm-start justify-content-center mt-3">
+                                                        <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back</button>
+                                                        <button class="text-uppercase btn btn--fill btn--delete-photo">Delete Post</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit3"  for="inputGroupFile03">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile03"
+                                                        aria-describedby="inputGroupFileAddon03">
+                                              <span class="photo_submit-delete d-none">Delete</span>
+                                            </label>
+                                          <!-- Delete Photo -->
+                                          <div class="modal fade deletePostModal" tabindex="-1" role="dialog"
+                                               aria-labelledby="deletePostModalLable" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-body">
+
+                                                  <div class="d-flex justify-content-sm-start justify-content-center flex-sm-row flex-column ">
+                                                    <img class="mr-sm-4 mr-0" src="img/delete-post.svg" alt="">
+                                                    <div class="text-center text-sm-left">
+                                                      <h4 class="text-uppercase text-black font-weight-bold mb-0">Delete Post?</h4>
+                                                      <p class="mb-0 text-dark">Wiping this post off the face of the earth?</p>
+                                                      <p class=" text-dark">AORA will be sad to see it go.</p>
+
+                                                      <div class="d-flex justify-content-sm-start justify-content-center mt-3">
+                                                        <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back</button>
+                                                        <button class="text-uppercase btn btn--fill btn--delete-photo">Delete Post</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit4"  for="inputGroupFile04">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile04"
+                                                        aria-describedby="inputGroupFileAddon04">
+                                              <span class="photo_submit-delete d-none">Delete</span>
+                                            </label>
+                                          <!-- Delete Photo -->
+                                          <div class="modal fade deletePostModal" tabindex="-1" role="dialog"
+                                               aria-labelledby="deletePostModalLable" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-body">
+
+                                                  <div class="d-flex justify-content-sm-start justify-content-center flex-sm-row flex-column ">
+                                                    <img class="mr-sm-4 mr-0" src="img/delete-post.svg" alt="">
+                                                    <div class="text-center text-sm-left">
+                                                      <h4 class="text-uppercase text-black font-weight-bold mb-0">Delete Post?</h4>
+                                                      <p class="mb-0 text-dark">Wiping this post off the face of the earth?</p>
+                                                      <p class=" text-dark">AORA will be sad to see it go.</p>
+
+                                                      <div class="d-flex justify-content-sm-start justify-content-center mt-3">
+                                                        <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back</button>
+                                                        <button class="text-uppercase btn btn--fill btn--delete-photo">Delete Post</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div>
+                                    <div class="form-group">
+                                        <label for="">Title</label>
+                                        <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30" rows="12" placeholder="Share with us why you feel like this product is the next it product in the market, how you managed to hunt down discounts, or anything that is on your mind. "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block__rounded p-lg-4 p-3 mb-4">
+                        <p class="text-uppercase text-blue font-weight-bold pb-4">Tag products</p>
+                        
+                        <div class="form__tag-products px-xl-5 px-3 py-4 w-100">
+                            
+                            <div id='TagProductGroup'>
+                                <div class="list__tag-products mb-3" id="tag_product_div1">
+                                    <div class="add-product-photo">
+                                        <div class="input-group mb-3">  
+                                            <div class="custom-file">
+                                                <label class="custom-file-label js-photo_submit3"  for="inputGroupFile03">
+                                                    <img src="img/camera.png" width="30px" alt="">
+
+                                                    <p class="plus-text">ADD PHOTO</p>
+                                                    <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile03"
+                                                            aria-describedby="inputGroupFileAddon03">
+                                                  <span class="photo_submit-delete d-none">Delete</span>
+                                                </label>
+                                              <!-- Delete Photo -->
+                                              <div class="modal fade deletePostModal" tabindex="-1" role="dialog"
+                                                   aria-labelledby="deletePostModalLable" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-body">
+
+                                                      <div class="d-flex justify-content-sm-start justify-content-center flex-sm-row flex-column ">
+                                                        <img class="mr-sm-4 mr-0" src="img/delete-post.svg" alt="">
+                                                        <div class="text-center text-sm-left">
+                                                          <h4 class="text-uppercase text-black font-weight-bold mb-0">Delete Post?</h4>
+                                                          <p class="mb-0 text-dark">Wiping this post off the face of the earth?</p>
+                                                          <p class=" text-dark">AORA will be sad to see it go.</p>
+
+                                                          <div class="d-flex justify-content-sm-start justify-content-center mt-3">
+                                                            <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back</button>
+                                                            <button class="text-uppercase btn btn--fill btn--delete-photo">Delete Post</button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column flex-fill">
+                                        <div class="form-group">
+                                            <label for="">Product URL*</label>
+                                            <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Product Name</label>
+                                            <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                        </div>
+                                        <p class="text-dark mb-3">* Mandatory Fields</p>
+                                    </div>
+                                    <div class="side__last">
+                                        <div class="form-group">
+                                            <label for="">This Product is From:</label>
+                                            <select id="country">
+                                                <option value="usa" rel="icon-temperature">United State</option>
+                                                <option value="india">India</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="">Product Price:</label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">USD</span>
+                                            </div>
+                                            <input type="text" class="form-control js-num-check"
+                                                   placeholder="Product Price" aria-label="product-price"
+                                                   aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="error-text">Please enter valid details</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="px-lg-3 mt-lg-0 mt-3">                                
+                                <input type="button" class="btn btn--dashed text-uppercase" value="+ tag another product" id="add_more_product">
+                                <input type="button" class="btn btn--dashed text-uppercase" value="- tag product" id="remove_product">                                      
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="block__rounded p-lg-4 p-3 mb-4">
+                        <p class="text-uppercase text-blue font-weight-bold pb-4">Post Category</p>
+                        <div class="form__post-category d-flex">
+                            
+                            <div id='postCatGroup'> 
+                                <div class="form-group mr-3" id="post_cat_div1">
+                                    <select id="categories">
+                                        <option value="all">All Categories</option>
+                                        <option value="category1">Category 1</option>
+                                        <option value="category2">Category 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <input type="button" class="btn btn--dashed text-uppercase" value="+ tag another category" id="add_more_category">
+                                <input type="button" class="btn btn--dashed text-uppercase" value="- tag category" id="remove_category">                                                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn--fill min-150"  data-toggle="modal" data-target="#curateProductModal">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+         <footer class="new-footer">
+             <div class="new-footer__inner">
+                 <div class="new-footer__menu">
+                     <div class="new-footer__menu-item">
+                         <div class="new-footer-title">help</div>
+                         <ul class="new-footer__menu-list">
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">FAQs</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Prohibited Items</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Contact Us</a></li>
+                         </ul>
+                     </div>
+                     <div class="new-footer__menu-item">
+                         <div class="new-footer-title">company</div>
+                         <ul class="new-footer__menu-list">
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">About Us</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Blog</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Merchant Directory</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Privacy Policy</a></li>
+                             <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Terms & Conditions</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="new-footer__icons">
+                     <div class="new-footer__icons-join">
+                         <div class="new-footer-title">join our community</div>
+                         <div class="new-footer__icons-join-items">
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/fb.svg" alt="facebook">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/insta.svg" alt="instagram">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/medium.svg" alt="medium">
+                             </a>
+                             <a href="#" class="new-footer__icons-join-item">
+                                 <img src="imgs/footer/reddit.svg" alt="reddit">
+                             </a>
+                         </div>
+                     </div>
+                     <div class="new-footer__icons-payment">
+                         <div class="new-footer-title">our payment partners:</div>
+                         <div class="new-footer__icons-payment-items">
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/stripe.svg" alt="stripe"></a>
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/bit.svg" alt="bit"></a></br>
+                             <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/coin.svg" alt="coin"></a>
+                         </div>
+                     </div>
+                     <div class="new-footer__icons-powered">
+                         <div class="new-footer-title">powered by:</div>
+                         <a href="#" class="new-footer__icons-powered-item">
+                             <img src="imgs/footer/singapore.svg" alt="singapore post">
+                         </a>
+                     </div>
+                 </div>
+                 <div class="new-footer__accept">
+                     <div class="new-footer-title">we accept:</div>
+                     <div class="new-footer__accept-items">
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa1.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa2.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa3.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa4.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa5.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa6.svg" alt="pay-name"></a>
+                         <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa7.svg" alt="pay-name"></a>
+                     </div>
+                 </div>
+             </div>
+         </footer>
+
+
+        <div class="modal fade curate-product-modal" id="curateProductModal" tabindex="-1" role="dialog" aria-labelledby="curateProductModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="py-lg-5 py-4 px-md-3 px-0">
+                            <h4 class="text-center mb-5">Curate Product Recommendations & Earn!</h4>
+                            <div class="d-flex flex-column inner ">
+                                <div class="step d-flex justify-content-start align-items-start mb-5">
+                                    <img src="img/create-post.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 1: Create Post</p>
+                                        <p class="text-dark">Write quality reviews of products you bought!</p>
+                                    </div>
+                                </div>
+                                <div class="step d-flex justify-content-start align-items-start mb-5">
+                                    <img src="img/post-share.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 2: Post & Share</p>
+                                        <p class="text-dark">Post your reviews and share them with your friends!</p>
+                                    </div>
+                                </div>
+                                <div class="step d-flex justify-content-start align-items-start">
+                                    <img src="img/earn-in-cash.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 3: Earn in Cash!</p>
+                                        <p class="text-dark">Earn 1% of the product value whenever someone makes a purchase through your post! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns d-flex justify-content-center mt-5">
+                                <button class="btn btn--fill ml-2" data-dismiss="modal" aria-label="Close">LET’S START WRITING!</button>
+                            </div>  
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="hide" id="overlay"></div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+        <script src="js/jquery.ellipsis.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/my-scripts.js"></script>
+      
+        <script>            
+                    var counter = 2;                    
+                    $('#add_more_category').click(function () {
+                        
+                        if(counter>10){
+                            alert("Only 10 Post Category allowed");
+                            return false;
+                        }   
+        
+                        var newPostCatDiv = $(document.createElement('div')).attr("id", 'post_cat_div'+counter).attr("class",'form-group mr-3');                                                 
+                            
+                            newPostCatDiv.after().html('<div class="select"><select id="categories"><option value="all">All Categories</option><option value="category1">Category 1</option><option value="category2">Category 2</option></select></div>');
+                            newPostCatDiv.appendTo("#postCatGroup");                            
+                            
+                            $('select').each(function () {
+                                var $this = $(this), numberOfOptions = $(this).children('option').length;
+                                $this.addClass('select-hidden');
+                                $this.wrap('<div class="select select-init"></div>');
+                                $this.after('<div class="select-styled"></div>');
+
+                                var $styledSelect = $this.next('div.select-styled');
+                                $styledSelect.text($this.children('option').eq(0).text());
+
+                                var $list = $('<ul />', {
+                                    'class': 'select-options'
+                                }).insertAfter($styledSelect);
+
+                                for (var i = 0; i < numberOfOptions; i++) {
+                                    $('<li />', {
+                                        text: $this.children('option').eq(i).text(),
+                                        rel: $this.children('option').eq(i).val()
+                                    }).appendTo($list);
+                                }
+
+                                var $listItems = $list.children('li');
+
+                                $styledSelect.click(function (e) {
+                                    e.stopPropagation();
+                                    $('div.select-styled.active').not(this).each(function () {
+                                        $(this).removeClass('active').next('ul.select-options').hide();
+                                    });
+                                    $(this).toggleClass('active').next('ul.select-options').toggle();
+                                });
+
+                                $listItems.click(function (e) {
+                                    e.stopPropagation();
+                                   $this.parent().removeClass('select-init');
+                                    $styledSelect.text($(this).text()).removeClass('active');
+                                    $this.val($(this).attr('rel'));
+                                    $list.hide();
+                                });
+
+                                $(document).click(function () {
+                                    $styledSelect.removeClass('active');
+                                    $list.hide();
+                                });
+
+                            });
+                            
+                        counter++;
+
+                    });
+                    
+                    // Removed the category...
+                     $("#remove_category").click(function () {
+                       if(counter<=2){
+                         alert("1 Category always should be");
+                         return false;
+                       }
+                                counter--;
+                            $("#post_cat_div"+counter).remove();
+                         });
+                         
+                    
+                    // For Tag Product add more and remove functions                     
+                    var counter_product = 2;                    
+                    $('#add_more_product').click(function () {
+                        
+                        if(counter_product>5){
+                            alert("Only 5 Tag Product Allowed");
+                            return false;
+                        }   
+        
+                            var newTagProduct = $(document.createElement('div')).attr("id", 'tag_product_div'+counter_product).attr("class", "list__tag-products mb-3");                                                 
+                            
+                            var tag_product_html =  '<div class="add-product-photo"><div class="input-group mb-3"> ';
+                                tag_product_html +=  '<div class="custom-file">';
+                                tag_product_html +=
+                                  '<label class="custom-file-label js-photo_submit3"  for="inputGroupFile'+counter_product+'">';
+                                tag_product_html += '<img src="img/camera.png" width="30px" alt="">';
+                                tag_product_html += '<p class="plus-text">ADD PHOTO</p>';
+                                tag_product_html += '<input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile'+counter_product+'" aria-describedby="inputGroupFileAddon'+counter_product+'">';
+                                                tag_product_html += '<span class="photo_submit-delete d-none">Delete</span></label>';
+                                            tag_product_html += '</div>';
+                                        tag_product_html += '</div>';
+                                    tag_product_html += '</div>';
+                                    
+                             
+                                tag_product_html += '<div class="d-flex flex-column flex-fill">';
+                                        tag_product_html += '<div class="form-group">';
+                                            tag_product_html += '<label for="">Product URL*</label>';
+                                            tag_product_html += '<input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">';
+                                        tag_product_html += '</div>';
+                                        tag_product_html += '<div class="form-group">';
+                                            tag_product_html += '<label for="">Product Name</label>';
+                                            tag_product_html += '<input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">';
+                                        tag_product_html += '</div>';
+                                        tag_product_html += '<p class="text-dark mb-3">* Mandatory Fields</p>';
+                                    tag_product_html += '</div>';
+                                    
+                                    tag_product_html += '<div class="side__last">';
+                                        tag_product_html += '<div class="form-group">';
+                                            tag_product_html += '<label for="">This Product is From:</label>';
+                                            tag_product_html += '<select id="country">';
+                                                tag_product_html += '<option value="usa" rel="icon-temperature">United State</option>';
+                                                tag_product_html += '<option value="india">India</option>';
+                                            tag_product_html += '</select>';
+                                        tag_product_html += '</div>';
+                                        tag_product_html += '<div class="input-group">';
+                                            tag_product_html += '<label for="">Product Price:</label>';
+                                            tag_product_html += '<div class="input-group-prepend">';
+                                                tag_product_html += '<span class="input-group-text" id="basic-addon1">USD</span>';
+                                            tag_product_html += '</div>';
+                                            tag_product_html +=
+                                              '<input type="text" class="form-control js-num-check" placeholder="Product Price" aria-label="product-price" aria-describedby="basic-addon1">';
+                                        tag_product_html += '</div>';
+                                        tag_product_html += '<div class="error-text">Please enter valid details</div>';
+
+                                    tag_product_html += '</div>';                                    
+                                                        
+                            newTagProduct.after().html(tag_product_html);
+                            newTagProduct.appendTo("#TagProductGroup");                            
+                            
+                            $('select').each(function () {
+                                var $this = $(this), numberOfOptions = $(this).children('option').length;
+                                $this.addClass('select-hidden');
+                                $this.wrap('<div class="select select-init"></div>');
+                                $this.after('<div class="select-styled"></div>');
+
+                                var $styledSelect = $this.next('div.select-styled');
+                                $styledSelect.text($this.children('option').eq(0).text());
+
+                                var $list = $('<ul />', {
+                                    'class': 'select-options'
+                                }).insertAfter($styledSelect);
+
+                                for (var i = 0; i < numberOfOptions; i++) {
+                                    $('<li />', {
+                                        text: $this.children('option').eq(i).text(),
+                                        rel: $this.children('option').eq(i).val()
+                                    }).appendTo($list);
+                                }
+
+                                var $listItems = $list.children('li');
+
+                                $styledSelect.click(function (e) {
+                                    e.stopPropagation();
+                                    $('div.select-styled.active').not(this).each(function () {
+                                        $(this).removeClass('active').next('ul.select-options').hide();
+                                    });
+                                    $(this).toggleClass('active').next('ul.select-options').toggle();
+                                });
+
+                                $listItems.click(function (e) {
+                                    e.stopPropagation();
+                                    $this.parent().removeClass('select-init');
+                                    $styledSelect.text($(this).text()).removeClass('active');
+                                    $this.val($(this).attr('rel'));
+                                    $list.hide();
+                                });
+
+                                $(document).click(function () {
+                                    $styledSelect.removeClass('active');
+                                    $list.hide();
+                                });
+
+                            });
+                                                   
+                            
+                        counter_product++;
+                    });
+                    
+                    // Remove the product section.
+                     $("#remove_product").click(function () {
+                       if(counter_product<=2){
+                         alert("1 product always should be");
+                         return false;
+                       }
+                                counter_product--;
+                            $("#tag_product_div"+counter_product).remove();
+                     });
+                    
+            </script>
+            
+    </body>
+
+</html>

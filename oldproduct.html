@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style-new.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    </head>
+
+    <body id="body" class="page innerpage">
+        <header class="header" id="header">
+            <div class="header-inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 header-left">
+                            <div class="main-menu">
+                                <nav class="navbar">
+                                    <button type="button" id="sidebarCollapse" class="menu-bar">
+                                        <img src="img/menubars.svg" alt="aora">
+                                    </button>
+                                </nav>
+                            </div>
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo.svg" alt="aora"></a>
+                            </div>
+                        </div>
+                        <div class="head-search col-lg-4 col-md-5">
+                            <div class="form-container">
+                                <form class="form">
+                                    <input class="form__input" type="text" placeholder="Search Marketplace or Paste Product URL ">
+                                    <button class="form__submit" type="submit"><img src="img/search-icon.svg"></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-8 header-right text-right">
+                            <div class="right-menu">
+                                <ul>
+                                    <li class="search-item"><a href="#"><span>Create Post</span></a></li>
+                                    <li class="cre-post"><a href="#"><span>Create Post</span></a></li>
+                                    <li class="hw-work" style="display: none"><a href="#"><span>How AORA <br>Works</span></a></li>
+                                    <li class="signup" style="display: none"><a href="#"><span>Sign up/<br>Log in</span></a></li>
+                                    <li class="my-account"><a href="#"><span>My Account</span></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">My account</a></li>
+                                                <li><a href="#">My profile</a></li>
+                                                <li><a href="#">My orders</a></li>
+                                                <li><a href="#">Help</a></li>
+                                                <li class="logout"><a href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="cart"><a href="#"><span>Cart</span></a></li>
+
+                                    <li class="notification">
+                                        <a href="notification.html"><img src="img/not-icon.svg" alt="aora"><span class="not-count">9</span></a>
+
+                                        <div class="drop-notification text-left">
+                                            <div class="notification-head">Notification</div>
+                                            <div class="notification-title">New</div>
+                                            <div class="notification_listwrap">
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-title"><a href="#">Earlier</a></div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 not-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-title"><a href="notification.html">See all</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/white-logo.svg" alt="aora">
+                    <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="side-contant">
+
+                    <ul class="side-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Create a post</a></li>
+                        <li><a href="#">My Account</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">My Profile</a></li>
+                                <li><a href="">My earnings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">My orders</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">Quotes in process</a></li>
+                                <li><a href="">Live Orders</a></li>
+                                <li><a href="">Past Orders</a></li>
+                                <li><a href="">Cancelled Orders</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Help?</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">How aora works</a></li>
+                                <li><a href="">Faq</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">About us</a></li>
+                            </ul>
+                        </li>
+                        <li class="logout"><a href="#">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </header>
+
+        <div class="main-wrap inner-wrap">
+            <section class="product-wrap">
+
+                <div class="product-detail">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 prodetail-left_wrap">
+                                <div class="prodetail-left">
+                                    <div class="profullimg">
+                                        <img src="img/product/product1.png">
+                                    </div>
+                                    <div class="prothumbnail clearfix">
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 prodetail-right_wrap">
+                                <div class="prodetail-right">
+
+                                    <div class="prodrighttop">
+                                        <div class="row">
+                                            <div class="pr_rightuser col-md-6 col-sm-6">
+                                                <img src="img/user/nt-user1.png">
+                                                <div class="pr-user">
+                                                    <h4>Rachel Ng</h4>
+                                                    <a href="lavel">Level 1</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="pr-follow col-md-6 col-sm-6">
+                                                <div class="follow_button follow_button_hover">
+                                                    <a class="fl-btn gr_btn js-btn-follow">Follow</a>
+                                                    <a class="d-none fl-btn following_btn btn--following js-btn-following">
+                                                        Following
+                                                    </a>
+                                                    <div class="fol-dropdown drop-list">
+                                                        <div class="dropdown-box">
+                                                            <ul>
+                                                                <li><a href="#">Report Inappropriate</a></li>
+                                                                <li><a href="#">Copy Link</a></li>
+                                                                <li><a class="js-save-post">Save Post</a></li>
+                                                                <li><a href="#">Cancel</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="fol-dropdown save-drop d-none">
+                                                        <div class="dropdown-box">
+                                                            <strong>Saved!</strong>
+                                                            <a href="#">See saved items</a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="more_button">
+                                                    <a href="#" class="prrt-more" data-toggle="modal" data-target="#exampleModalCenter">. . .</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod_category">
+                                        <span><a href="#">Lifestyle</a></span>
+                                        <span><a href="#">Smart Home</a></span>
+                                        <span><a href="#">Tech</a></span>
+                                    </div>
+
+                                    <div class="pode_content">
+                                        <h2>Nebula Capsule Smart Mini Projector </h2>
+                                        <p>This is a revolutionary product --- a very usable portable projector. It is decently bright; can work for hours on battery; can sit nicely on most surfaces. It has brought me convenience as I am able to do presentations to my clients without having to find a room with a full size projector! I highly recommend this to anyone who does a lot of presentations or just wants a light and portable big screen display.</p>
+                                    </div>
+
+                                    <div class="pod_postdetail">
+                                        <div class="pst-date">Posted on 14 April 2019</div>
+                                        <div class="pst_likeview desktop-display">
+                                            <ul>
+                                                <li class="pst_like">
+                                                    <a href="#"><img src="img/pst-fav.png"><span class="pst_count">0</span></a>
+                                                </li>
+                                                <li class="pst_view">
+                                                    <a href="#"><img src="img/eye.png"><span class="pst_count">10</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="pst_likeview mobile-display">
+                                            <ul>
+                                                <li class="pst_like">
+                                                    <a href="#"><img src="img/mb-fav-icon.png"><span class="pst_count">0</span></a>
+                                                </li>
+                                                <li class="pst_view">
+                                                    <a href="#"><img src="img/mb-eye-icon.png"><span class="pst_count">10</span></a>
+                                                </li>
+                                                <li class="post_share">
+                                                    <a href="#"><img src="img/mb-share-icon.png"></a>
+                                                </li>
+                                                <li class="post_tag float-right mg-rg-0">
+                                                    <a href="#"><img src="img/tag-icon.png"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="pst_share">
+                                            <a href="#" class="gr_btn">Share</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-feature">
+                            <h3>products featured:</h3>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+
+                                        <div class="feat_img">
+                                            <span class="featcount">1</span>
+                                            <img src="img/product/featured1.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Kindle Oasis E-reader - 7" High-Resolution Display (300 ppi), Waterproof, 8 GB, Wi... </h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">2</span>
+                                            <img src="img/product/featured2.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Samsumg Smartwatch (Black)</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">3</span>
+                                            <img src="img/product/featured3.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Robomono Juicer</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">4</span>
+                                            <img src="img/product/featured4.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Waffle Maker with Nutella</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $30.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">5</span>
+                                            <img src="img/product/featured5.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Dazzle Eyeshadow Palette</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $45.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_section">
+                            <h3>What’s buzzing!</h3>
+                            <div class="post_text clearfix">
+                                <div class="post_user">
+                                    <img src="img/user/postuser1.png">
+                                </div>
+                                <div class="post_textbox">
+                                    <div class="postcom-box">
+                                        <input type="text" name="text">
+                                        <a href="#" class="pst-btn gr_btn">Post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply-list clearfix">
+                                <div class="reply-box clearfix">
+                                    <div class="reply_user">
+                                        <img src="img/user/postuser2.png">
+                                    </div>
+                                    <div class="reply_contant">
+                                        <div class="reply-title clearfix">
+                                            <h4>Alexa Ng</h4>
+                                            <div class="reply_text">
+                                                <p>Does this work well on uneven surfaces?</p>
+                                            </div>
+                                        </div>
+                                        <div class="reply_detail">
+                                            <div class="reply_time">
+                                                <span>1 day ago</span>
+                                                <label>Reply</label>
+                                            </div>
+                                            <div class="reply_view">
+                                                <span>View more replies (4)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply-box clearfix">
+                                    <div class="reply_user">
+                                        <img src="img/user/postuser3.png">
+                                    </div>
+                                    <div class="reply_contant">
+                                        <div class="reply-title clearfix">
+                                            <h4>Tanner</h4>
+                                            <div class="reply_text">
+                                                <p>Love it!</p>
+                                            </div>
+                                        </div>
+                                        <div class="reply_detail">
+                                            <div class="reply_time">
+                                                <span>1 day ago</span>
+                                                <label>Reply</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-comment clearfix"><a href="#">View All Comments (15)</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-inner">
+                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc">
+                        <h3>Help</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Prohibited Items</a></li>
+                        </ul>
+                        <div class="ft-contact">
+                            <h3>Contact Us</h3>
+                            <p>Get in touch with us at connect@aora.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc">
+                        <h3>Company</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">About Us</a></a>
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Merchant Directory</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc mobile-display">
+                        <h3>Powered by: </h3>
+                        <ul class="ft-accept">
+                            <li>
+                                <a href="#"><img src="img/mb-powerby.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 footer-blc footer-follow">
+                        <h3>Follow</h3>
+                        <ul class="ft-follows">
+                            <li>
+                                <a href="#"><img src="img/fb-icon.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/radite-icon.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/twitt-icon.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/ft-print.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/youtube.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row footer-bottom">
+                    <div class="col-md-10 footer-blc accept_logo">
+                        <h3>We accept:</h3>
+                        <ul class="ft-accept">
+                            <li>
+                                <a href="#"><img src="img/master-card.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/visa-card.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/amer-card.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/jbc.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/dinerclub.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/b-icon.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/tring-icon.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/aoura-gold.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footer-blc">
+                        <h3>Powered by: </h3>
+                        <ul class="ft-accept">
+                            <li>
+                                <a href="#"><img src="img/powerby.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade bg-none" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="dropdown-box model-dropbox">
+                            <ul>
+                                <li><strong>Report Inappropriate</strong></li>
+                                <li>Nudity or Pornography</li>
+                                <li><strong>Hate Speech or Symbols (Racist/Homophobic/Sexist Slurs)</strong></li>
+                                <li>Violence</li>
+                                <li>Intellectual Property Violation (Copyright or Trademark Infringement)</li>
+
+                            </ul>
+                            <div class="sub-btn">
+                                <a href="#" class="model-btn gr_btn">Submitted <i class="fa fa-check"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/custom.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+            var body = document.getElementById("body");
+            var sticky = body.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+                if (window.pageYOffset > sticky) {
+                    body.classList.add("sticky");
+                } else {
+                    body.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+
+</html>

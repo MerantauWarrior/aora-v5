@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/new-style.css" rel="stylesheet">
+        <link href="css/header-footer.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body id="body" class="page innerpage">
+    <header class="main-header">
+      <div class="main-header-mobile">
+        <div class="main-header-mobile__open">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="main-header-mobile__logo"><img src="imgs/new-logo.svg" alt="aora"></div>
+        <div class="main-header-mobile__menu">
+          <div class="main-header-mobile__menu-block">
+            <a href="#" class="main-header-mobile__menu-link js_open_modal" data-modal="#login_modal">LOG IN | SIGN UP</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="https://aora.cf" class="main-header-mobile__menu-link">HOME</a>
+            <a href="how-aora-work" class="main-header-mobile__menu-link">HOW AORA WORKS</a>
+            <a href="about" class="main-header-mobile__menu-link">ABOUT US</a>
+            <a class="main-header-mobile__menu-link" href="user/invite">REFER A FRIEND</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="setting" class="main-header-mobile__menu-link">MY ACCOUNT</a>
+            <a href="orders" class="main-header-mobile__menu-link">ORDERS</a>
+          </div>
+          <div class="main-header-mobile__menu-block">
+            <a href="contact" class="main-header-mobile__menu-link">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+      <ul class="page-header__top-list">
+        <li class="page-header__top-list-item js_open_modal" data-modal="#login_modal">
+          <a href="#" class="page-header__top-list-link">
+            <img src="imgs/account.svg" alt="">
+            <span class="page-header__top-list-text">Log In | Sign Up</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="#" class="page-header__top-list-link">
+            <img src="imgs/orders.svg" alt="">
+            <span class="page-header__top-list-text">Orders</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="cart" class="page-header__top-list-link">
+            <img src="imgs/cart.svg" alt="">
+            <span class="page-header__top-list-text">Cart</span>
+            <span class="page-header__top-list-indicator">2</span>
+          </a>
+        </li>
+        <li class="page-header__top-list-item">
+          <a href="cart" class="page-header__top-list-link">
+            <img src="imgs/icon-notifications.svg" alt="">
+            <span class="page-header__top-list-notifications">9</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-header__controls">
+        <div class="main-header__logo"><a href="https://aora.cf"><img src="imgs/new-logo.svg" alt="aora"></a></div>
+        <nav class="main-header__menu">
+          <a class="main-header__menu-link" href="https://aora.cf">HOME</a>
+          <a class="main-header__menu-link " href="#how-aora-work">HOW AORA WORKS</a>
+          <a class="main-header__menu-link " href="#how-aora-work">
+            <img src="imgs/icon-tel.svg" class="main-header__menu-tel">Contact Us</a>
+        </nav>
+        <form id="header_search_form" class="main-header__search main-header__search-landing" method="post" action="result">
+          <input type="text" name="link" id="search" class="inp-main-header__search" placeholder="Paste Product URL Here">
+          <button type="submit" class="submit-main-header__search"></button>
+        </form>
+      </div>
+    </header>
+
+        <div class="main-wrap inner-wrap">
+            <section class="product-wrap">
+
+                <div class="product-detail">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 prodetail-left_wrap">
+                                <div class="prodetail-left">
+                                    <div class="profullimg">
+                                        <img src="img/product/product1.png">
+                                    </div>
+                                    <div class="prothumbnail clearfix">
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                        <div class="thum-img">
+                                            <a href="#">
+                                                <img src="img/product/thumb1.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 prodetail-right_wrap">
+                                <div class="prodetail-right">
+
+                                    <div class="prodrighttop">
+                                        <div class="row">
+                                            <div class="pr_rightuser col-md-6 col-sm-6">
+                                                <img src="img/user/nt-user1.png">
+                                                <div class="pr-user">
+                                                    <h4>Rachel Ng</h4>
+                                                    <a href="lavel">Level 1</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="pr-follow col-md-6 col-sm-6">
+                                                <div class="follow_button">
+                                                    <a class="fl-btn gr_btn js-btn-follow">Follow</a>
+                                                    <div class="d-none fl-btn following_btn btn--following js-btn-following">
+                                                        Following
+                                                    </div>                                                    
+                                                </div>
+
+                                                <div class="follow_button follow_button_hover">
+                                                    <a href="#" class="prrt-more" data-toggle="modal" data-target="#exampleModalCenter">. . .</a>
+
+                                                    <div class="fol-dropdown drop-list">
+                                                        <div class="dropdown-box">
+                                                            <ul>
+                                                                <li><a href="#">Report Inappropriate</a></li>
+                                                                <li><a href="#">Copy Link</a></li>
+                                                                <li><a class="js-save-post">Save Post</a></li>
+                                                                <li><a href="#">Cancel</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="fol-dropdown save-drop d-none">
+                                                        <div class="dropdown-box">
+                                                            <strong>Saved!</strong>
+                                                            <a href="#">See saved items</a>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod_category">
+                                        <span><a href="#">Lifestyle</a></span>
+                                        <span><a href="#">Smart Home</a></span>
+                                        <span><a href="#">Tech</a></span>
+                                    </div>
+
+                                    <div class="pode_content">
+                                        <h2>Nebula Capsule Smart Mini Projector </h2>
+                                        <p>This is a revolutionary product --- a very usable portable projector. It is decently bright; can work for hours on battery; can sit nicely on most surfaces. It has brought me convenience as I am able to do presentations to my clients without having to find a room with a full size projector! I highly recommend this to anyone who does a lot of presentations or just wants a light and portable big screen display.</p>
+                                    </div>
+
+                                    <div class="pod_postdetail">
+                                        <div class="pst-date">Posted on 14 April 2019</div>
+                                        <div class="pst_likeview desktop-display">
+                                            <ul>
+                                                <li class="pst_like">
+                                                    <a href="#"><img src="img/pst-fav.png"><span class="pst_count">0</span></a>
+                                                </li>
+                                                <li class="pst_view">
+                                                    <a href="#"><img src="img/eye.png"><span class="pst_count">10</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="pst_likeview mobile-display">
+                                            <ul>
+                                                <li class="pst_like">
+                                                    <a href="#"><img src="img/mb-fav-icon.png"><span class="pst_count">0</span></a>
+                                                </li>
+                                                <li class="pst_view">
+                                                    <a href="#"><img src="img/mb-eye-icon.png"><span class="pst_count">10</span></a>
+                                                </li>
+                                                <li class="post_share">
+                                                    <a href="#"><img src="img/mb-share-icon.png"></a>
+                                                </li>
+                                                <li class="post_tag float-right mg-rg-0">
+                                                    <a href="#"><img src="img/tag-icon.png"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="pst_share">
+                                            <a href="#" class="gr_btn">Share</a>
+                                            <div class="b-share-product">
+                                              <div class="b-share-product__title">Share via:</div>
+                                              <div class="b-share-product__items">
+                                                <a href="#" class="b-share-product__item">
+                                                  <div class="b-share-product__item-img"><img src="imgs/product-share-fb.svg" alt=""></div>
+                                                  <div class="b-share-product__item-text">Share to Facebook</div>
+                                                </a>
+                                                <a href="#" class="b-share-product__item">
+                                                  <div class="b-share-product__item-img"><img src="imgs/product-share-twitter.svg" alt=""></div>
+                                                  <div class="b-share-product__item-text">Share to Twitter</div>
+                                                </a>
+                                                <a href="https://trello.com/b/oFImF0Jy/aora-html-boris" class="b-share-product__item js-share-product">
+                                                  <div class="b-share-product__item-img"><img src="imgs/product-share-link.svg" alt=""></div>
+                                                  <div class="b-share-product__item-text">Copy Link</div>
+                                                  <img src="imgs/product-share-link-copied.svg"
+                                                       class="b-share-product__item-img-copied">
+                                                </a>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-feature">
+                            <h3>products featured:</h3>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+
+                                        <div class="feat_img">
+                                            <span class="featcount">1</span>
+                                            <img src="img/product/featured1.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Kindle Oasis E-reader - 7" High-Resolution Display (300 ppi), Waterproof, 8 GB, Wi... </h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">2</span>
+                                            <img src="img/product/featured2.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Samsumg Smartwatch (Black)</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">3</span>
+                                            <img src="img/product/featured3.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Robomono Juicer</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $100.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">4</span>
+                                            <img src="img/product/featured4.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Waffle Maker with Nutella</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $30.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="pro-featlist clearfix">
+                                        <div class="feat_img">
+                                            <span class="featcount">5</span>
+                                            <img src="img/product/featured5.png">
+                                        </div>
+                                        <div class="feat_right">
+                                            <div class="feattitle">
+                                                <h3>Dazzle Eyeshadow Palette</h3>
+                                            </div>
+                                            <div class="featlist_cart">
+                                                <span class="feat-state">From: United States</span>
+                                                <span class="feat-price">~ USD $45.00</span>
+                                                <div class="cartbtn">
+                                                    <a href="" class="cart_btn">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_section">
+                            <h3>What’s buzzing!</h3>
+                            <div class="post_text clearfix">
+                                <div class="post_user">
+                                    <img src="img/user/postuser1.png">
+                                </div>
+                                <div class="post_textbox">
+                                    <div class="postcom-box">
+                                        <input type="text" name="text">
+                                        <a href="#" class="pst-btn gr_btn">Post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply-list clearfix">
+                                <div class="reply-box clearfix">
+                                    <div class="reply_user">
+                                        <img src="img/user/postuser2.png">
+                                    </div>
+                                    <div class="reply_contant">
+                                        <div class="reply-title clearfix">
+                                            <h4>Alexa Ng</h4>
+                                            <div class="reply_text">
+                                                <p>Does this work well on uneven surfaces?</p>
+                                            </div>
+                                        </div>
+                                        <div class="reply_detail">
+                                            <div class="reply_time">
+                                                <span>1 day ago</span>
+                                                <label>Reply</label>
+                                            </div>
+                                            <div class="reply_view">
+                                                <span>View more replies (4)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reply-box clearfix">
+                                    <div class="reply_user">
+                                        <img src="img/user/postuser3.png">
+                                    </div>
+                                    <div class="reply_contant">
+                                        <div class="reply-title clearfix">
+                                            <h4>Tanner</h4>
+                                            <div class="reply_text">
+                                                <p>Love it!</p>
+                                            </div>
+                                        </div>
+                                        <div class="reply_detail">
+                                            <div class="reply_time">
+                                                <span>1 day ago</span>
+                                                <label>Reply</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="all-comment clearfix"><a href="#">View All Comments (15)</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <footer class="new-footer">
+      <div class="new-footer__inner">
+        <div class="new-footer__menu">
+          <div class="new-footer__menu-item">
+            <div class="new-footer-title">help</div>
+            <ul class="new-footer__menu-list">
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">FAQs</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Prohibited Items</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="new-footer__menu-item">
+            <div class="new-footer-title">company</div>
+            <ul class="new-footer__menu-list">
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">About Us</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Blog</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Merchant Directory</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Privacy Policy</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="new-footer__icons">
+          <div class="new-footer__icons-join">
+            <div class="new-footer-title">join our community</div>
+            <div class="new-footer__icons-join-items">
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/fb.svg" alt="facebook">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/insta.svg" alt="instagram">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/medium.svg" alt="medium">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/reddit.svg" alt="reddit">
+              </a>
+            </div>
+          </div>
+          <div class="new-footer__icons-payment">
+            <div class="new-footer-title">our payment partners:</div>
+            <div class="new-footer__icons-payment-items">
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/stripe.svg" alt="stripe"></a>
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/bit.svg" alt="bit"></a></br>
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/coin.svg" alt="coin"></a>
+            </div>
+          </div>
+          <div class="new-footer__icons-powered">
+            <div class="new-footer-title">powered by:</div>
+            <a href="#" class="new-footer__icons-powered-item">
+              <img src="imgs/footer/singapore.svg" alt="singapore post">
+            </a>
+          </div>
+        </div>
+        <div class="new-footer__accept">
+          <div class="new-footer-title">we accept:</div>
+          <div class="new-footer__accept-items">
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa1.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa2.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa3.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa4.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa5.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa6.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa7.svg" alt="pay-name"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <div class="modal fade bg-none" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="dropdown-box model-dropbox">
+                            <h3>Report Inappropriate</h3>
+                            <ul>
+                                <li><input type="checkbox" value=""><label>Nudity or Pornography</label></li>
+                                <li><input type="checkbox" value=""><label>Hate Speech or Symbols (Racist/Homophobic/Sexist Slurs)</label></li>
+                                <li><input type="checkbox" value=""><label>Violence</label></li>
+                                <li><input type="checkbox" value=""><label>Intellectual Property Violation (Copyright or Trademark Infringement)</label></li>
+
+                            </ul>
+                            <div class="sub-btn">
+                                <a href="#" class="model-btn gr_btn">Submitted <i class="fa fa-check"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <script src="js/custom.js"></script>
+        <script type="text/javascript" src="js/my-scripts.js"></script>
+        <script>
+//            window.onscroll = function () {
+//                stickyFunction()
+//            };
+//
+//            var header = document.getElementById("header");
+//            var sticky = header.offsetTop;
+//            var body = document.getElementById("body");
+//            var sticky = body.offsetTop;
+//            function stickyFunction() {
+//                if (window.pageYOffset > sticky) {
+//                    header.classList.add("sticky");
+//                } else {
+//                    header.classList.remove("sticky");
+//                }
+//                if (window.pageYOffset > sticky) {
+//                    body.classList.add("sticky");
+//                } else {
+//                    body.classList.remove("sticky");
+//                }
+//            }
+        </script>
+    </body>
+
+</html>

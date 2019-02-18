@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+         <header class="header" id="header">
+            <div class="header-inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 header-left">
+                            <div class="main-menu">
+                                <nav class="navbar">
+                                    <button type="button" id="sidebarCollapse" class="menu-bar">
+                                        <img src="img/menubars.svg" alt="aora">
+                                    </button>
+                                </nav>
+                            </div>
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo.svg" alt="aora"></a> 
+                            </div>
+                        </div>
+                        <div class="head-search col-lg-4 col-md-5 col-sm-4">
+                            <div class="form-container">
+                                <form class="form">
+                                    <input class="form__input" type="text" placeholder="Search Marketplace or Paste Product URL ">
+                                    <button class="form__submit" type="submit"><img src="img/search-icon.svg"></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-8 header-right text-right">
+                            <div class="right-menu">
+                                <ul>
+                                    <li class="search-results d-md-none d-inline-block"><a><span></span></a></li>                                    
+                                    <li class="cre-post"><a href="create-post.html"><span>Create Post</span></a></li>
+                                    <li class="hw-work" style="display: none"><a href="#"><span>How AORA <br>Works</span></a></li>
+                                    <li class="signup" style="display: none"><a href="#"><span>Sign up/<br>Log in</span></a></li>
+                                    <li class="my-account"><a href="#"><span>My Account</span></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">My account</a></li>
+                                                <li><a href="#">My profile</a></li>
+                                                <li><a href="#">My orders</a></li>
+                                                <li><a href="#">Help</a></li>
+                                                <li class="logout"><a href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="cart"><a href="#"><span>Cart</span></a></li>
+
+                                    <li class="notification">
+                                        <a href="notification.html"><img src="img/not-icon.svg" alt="aora"><span class="not-count">9</span></a>
+
+                                        <div class="drop-notification text-left">
+                                            <div class="notification-head">Notification</div>
+                                            <div class="notification-title">New</div>
+                                            <div class="notification_listwrap">
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-title"><a href="#">Earlier</a></div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 not-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-title"><a href="notification.html">See all</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/white-logo.svg" alt="aora">
+                    <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="side-contant">
+
+                    <ul class="side-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="create-post.html">Create a post</a></li>
+                        <li><a href="javascript:;">My Account</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="profile.html">My Profile</a></li>
+                                <li><a href="my-earnings.html">My earnings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">My orders</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">Quotes in process</a></li>
+                                <li><a href="">Live Orders</a></li>
+                                <li><a href="">Past Orders</a></li>
+                                <li><a href="">Cancelled Orders</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Help?</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">How aora works</a></li>
+                                <li><a href="">Faq</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">About us</a></li>
+                            </ul>
+                        </li>
+                        <li class="logout"><a href="#">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </header>
+
+        <div class="main-wrap create-post">
+            <div class="container py-lg-5 py-4">
+                <form>
+                    <div class="block__rounded p-lg-4 p-3 mb-4 ">
+                        <h5 class="text-center font-weight-bold mb-md-5 mb-5 pb-4">Create Post</h5>
+                        <div class="row">
+                            <div class="col-md-5 block__add-photo">
+                                <div class="add-photo input-group mb-3">
+                                    <div class="custom-file">
+                                        <label class="custom-file-label js-photo_submit1"  for="inputGroupFile01">
+                                            <div class="plus-text">+</div>
+                                            <p class="plus-text">ADD PHOTO</p>
+                                            <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                            <span class="photo_submit-delete d-none">Delete</span>
+                                        </label>
+                                    </div>
+                                    <img class="add-photo-img" src="img/aora-hi.png" alt="">
+
+                                </div>
+                                <div class="list__photo">
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit2"  for="inputGroupFile02">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile02"
+                                                        aria-describedby="inputGroupFileAddon02">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit3"  for="inputGroupFile03">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile03"
+                                                        aria-describedby="inputGroupFileAddon03">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="custom-file">
+                                            <label class="custom-file-label js-photo_submit4"  for="inputGroupFile04">
+                                                <p class="plus-text">ADD PHOTO</p>
+                                                <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile04"
+                                                        aria-describedby="inputGroupFileAddon04">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div>
+                                    <div class="form-group">
+                                        <label for="">Title</label>
+                                        <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Description</label>
+                                        <textarea class="form-control" name="description" id="" cols="30" rows="12" placeholder="Share with us why you feel like this product is the next it product in the market, how you managed to hunt down discounts, or anything that is on your mind. "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block__rounded p-lg-4 p-3 mb-4">
+                        <p class="text-uppercase text-blue font-weight-bold pb-4">Tag products</p>
+                        <div class="form__tag-products px-xl-5 px-3 py-4 w-100">
+                            <div>
+                                <div class="list__tag-products mb-3">
+                                    <div class="add-product-photo">
+                                        <div class="input-group mb-3">  
+                                            <div class="custom-file">
+                                                <label class="custom-file-label js-photo_submit3"  for="inputGroupFile03">
+                                                    <img src="img/camera.png" width="30px" alt="">
+
+                                                    <p class="plus-text">ADD PHOTO</p>
+                                                    <input  type="file" accept="image/*" class="custom-file-input photo_submit-input js-photo_submit-input" id="inputGroupFile03"
+                                                            aria-describedby="inputGroupFileAddon03">
+                                                </label>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column flex-fill">
+                                        <div class="form-group">
+                                            <label for="">Product URL*</label>
+                                            <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Product Name</label>
+                                            <input type="text" class="form-control" name="title" placeholder="E.g. 5 Products for the Summer!">
+                                        </div>
+                                        <p class="text-dark mb-3">* Mandatory Fields</p>
+                                    </div>
+                                    <div class="side__last">
+                                        <div class="form-group">
+                                            <label for="">This Product is From:</label>
+                                            <select id="country">
+                                                <option value="usa" rel="icon-temperature">United State</option>
+                                                <option value="india">India</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group error">
+                                            <label for="">Product Price:</label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">USD</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Product Price" aria-label="product-price"
+                                                   aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="error-text">Please enter valid details</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="px-lg-3 mt-lg-0 mt-3">
+                                <button class="btn btn--dashed text-uppercase">+ tag another product</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block__rounded p-lg-4 p-3 mb-4">
+                        <p class="text-uppercase text-blue font-weight-bold pb-4">Post Category</p>
+                        <div class="form__post-category d-flex">
+                            <div class="form-group mr-3">
+                                <select id="categories">
+                                    <option value="all">All Categories</option>
+                                    <option value="category1">Category 1</option>
+                                    <option value="category2">Category 2</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn btn--dashed text-uppercase">+ tag another category</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn--fill min-150"  data-toggle="modal" data-target="#curateProductModal">Post</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-inner">
+                    <div class="col-md-3 footer-blc">
+                        <h3>HELP</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Prohibited Items</a></li>
+                        </ul>
+                        <div class="ft-contact">
+                            <h3>CONTACT US</h3>
+                            <p>Get in touch with us at connect@aora.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 footer-blc">
+                        <h3>COMPANY</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">About Us</a></a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Merchant Directory</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 footer-blc">
+                        <h3>FOLLOW</h3>
+                        <ul class="ft-follows">
+                            <li><a href="#"><img src="img/fb-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/radite-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/twitt-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/ft-print.svg"></a></li>
+                            <li><a href="#"><img src="img/youtube.svg"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row footer-bottom">
+                    <div class="col-md-10 footer-blc">
+                        <h3>WE ACCEPT:</h3>
+                        <ul class="ft-accept">
+                            <li><a href="#"><img src="img/master-card.svg"></a></li>
+                            <li><a href="#"><img src="img/visa-card.svg"></a></li>
+                            <li><a href="#"><img src="img/amer-card.svg"></a></li>
+                            <li><a href="#"><img src="img/jbc.svg"></a></li>
+                            <li><a href="#"><img src="img/dinerclub.svg"></a></li>
+                            <li><a href="#"><img src="img/b-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/tring-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/aoura-gold.svg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footer-blc">
+                        <h3>POWERED BY: </h3>
+                        <ul class="ft-accept">
+                            <li><a href="#"><img src="img/powerby.svg"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+        <div class="modal fade curate-product-modal" id="curateProductModal" tabindex="-1" role="dialog" aria-labelledby="curateProductModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="py-lg-5 py-4 px-md-3 px-0">
+                            <h4 class="text-center mb-5">Curate Product Recommendations & Earn!</h4>
+                            <div class="d-flex flex-column inner ">
+                                <div class="step d-flex justify-content-start align-items-start mb-5">
+                                    <img src="img/create-post.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 1: Create Post</p>
+                                        <p class="text-dark">Write quality reviews of products you bought!</p>
+                                    </div>
+                                </div>
+                                <div class="step d-flex justify-content-start align-items-start mb-5">
+                                    <img src="img/post-share.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 2: Post & Share</p>
+                                        <p class="text-dark">Post your reviews and share them with your friends!</p>
+                                    </div>
+                                </div>
+                                <div class="step d-flex justify-content-start align-items-start">
+                                    <img src="img/earn-in-cash.png" alt="">
+                                    <div>
+                                        <p class="text-pink font-weight-bold mt-3">Step 3: Earn in Cash!</p>
+                                        <p class="text-dark">Earn 1% of the product value whenever someone makes a purchase through your post! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns d-flex justify-content-center mt-5">
+                                <button class="btn btn--fill ml-2" data-dismiss="modal" aria-label="Close">LET’S START WRITING!</button>
+                            </div>  
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+
+        <div class="hide" id="overlay"></div>
+
+
+        <!-- <button class="to-top" type="button">Наверх</button> -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <!-- <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/masonry.min.js"></script> -->
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+        <script src="js/jquery.ellipsis.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </body>
+
+</html>

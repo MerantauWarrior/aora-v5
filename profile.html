@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>AORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <div class="header-inner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-4 header-left">
+                            <div class="main-menu">
+                                <nav class="navbar">
+                                    <button type="button" id="sidebarCollapse" class="menu-bar">
+                                        <img src="img/menubars.svg" alt="aora">
+                                    </button>
+                                </nav>
+                            </div>
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo.svg" alt="aora"></a> 
+                            </div>
+                        </div>
+                        <div class="head-search col-lg-4 col-md-5 col-sm-4">
+                            <div class="form-container">
+                                <form class="form">
+                                    <input class="form__input" type="text" placeholder="Search Marketplace or Paste Product URL ">
+                                    <button class="form__submit" type="submit"><img src="img/search-icon.svg"></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-8 header-right text-right">
+                            <div class="right-menu">
+                                <ul>
+                                    <li class="search-results d-md-none d-inline-block"><a><span></span></a></li>                                    
+                                    <li class="cre-post"><a href="create-post.html"><span>Create Post</span></a></li>
+                                    <li class="hw-work" style="display: none"><a href="#"><span>How AORA <br>Works</span></a></li>
+                                    <li class="signup" style="display: none"><a href="#"><span>Sign up/<br>Log in</span></a></li>
+                                    <li class="my-account"><a href="#"><span>My Account</span></a>
+                                        <div class="dropdown">
+                                            <ul>
+                                                <li><a href="#">My account</a></li>
+                                                <li><a href="#">My profile</a></li>
+                                                <li><a href="#">My orders</a></li>
+                                                <li><a href="#">Help</a></li>
+                                                <li class="logout"><a href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="cart"><a href="#"><span>Cart</span></a></li>
+
+                                    <li class="notification">
+                                        <a href="notification.html"><img src="img/not-icon.svg" alt="aora"><span class="not-count">9</span></a>
+
+                                        <div class="drop-notification text-left">
+                                            <div class="notification-head">Notification</div>
+                                            <div class="notification-title">New</div>
+                                            <div class="notification_listwrap">
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-title"><a href="#">Earlier</a></div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user1.png">
+                                                                <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="notification-list">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
+                                                            <div class="notification-user">
+                                                                <img src="img/user/nt-user2.png">
+                                                                <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
+                                                            </div>
+                                                            <div class="notification-detail">
+                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                                                <span class="use-time">1 hour ago</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 not-list-rt">
+                                                            <div class="notification-user-pro">
+                                                                <img src="img/user/use-prod1.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-title"><a href="notification.html">See all</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/white-logo.svg" alt="aora">
+                    <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="side-contant">
+
+                    <ul class="side-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="create-post.html">Create a post</a></li>
+                        <li><a href="javascript:;">My Account</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="profile.html">My Profile</a></li>
+                                <li><a href="my-earnings.html">My earnings</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">My orders</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">Quotes in process</a></li>
+                                <li><a href="">Live Orders</a></li>
+                                <li><a href="">Past Orders</a></li>
+                                <li><a href="">Cancelled Orders</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Help?</a>
+                            <ul class="sidesubmenu">
+                                <li><a href="">How aora works</a></li>
+                                <li><a href="">Faq</a></li>
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">About us</a></li>
+                            </ul>
+                        </li>
+                        <li class="logout"><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-wrap">
+            <div class="container pt-5">
+                <div class="block__profile row d-flex align-items-stretch">
+                    <div class="col-lg-4 px-sm-3 px-0 profile">
+                        <div class="bg-white block__profile-left">
+                            <div class="profile-top d-flex flex-lg-column flex-row align-items-center">
+                                <div class="profile-img-div mb-3" data-toggle="modal" data-target="#editProfileModal">  
+                                    <img class="profile-img rounded-circle" src="img/profile.png" alt="Profile Photo" width="150" height="150">
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <p class="text-blue font-weight-bold text-uppercase">Rachel Ng </p>
+                                    <p class="text-dark text-uppercase font-weight-bold">@Happybunnies</p>
+
+                                    <button class="btn btn--outline">LEVEL 1 <img src="img/level.svg" alt="Level 1"></button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center follow-block mb-5">
+                                <button class="btn btn--follow js-btn-follow">Follow</button>
+                                <button class="btn btn--following d-none js-btn-following">Following <img class="ml-3" src="img/tick.svg" width="20"/></button>
+                            </div>
+
+                            <div class="earnings__block p-3 d-flex flex-column align-items-center">
+                                <p class="text-uppercase text-pink font-weight-bold mb-2 dropdown-list">MY AORA Earnings 
+                                    <img class="ml-4 caret-up" src="img/caret-up.svg" width="9">
+                                    <img class="ml-4 caret-down" src="img/caret-down.svg" width="9"> 
+                                </p>
+                                <div class="earnings__inner-block">
+                                    <p class="text-center text-light-black">Earn 1% from every successful product sold through your post!</p>
+                                    <div class="balance">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="font-weight-bold text-black">Available Balance <sup><img src="img/info.svg" alt="Info" width="10"></sup></div>
+                                            <div class="text-blue font-weight-bold">0 Pts</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="font-weight-bold text-black">Pending Balance <sup><img src="img/info.svg" alt="Info" width="10"></sup></div>
+                                            <div class="text-blue font-weight-bold">0 Pts</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="font-weight-bold text-black">Withdrawn <sup><img src="img/info.svg" alt="Info" width="10"></sup></div>
+                                            <div class="text-blue font-weight-bold">0 Pts</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="my-stats">
+                                <p class=" pt-4 py-3 font-weight-bold text-center text-pink text-uppercase">My Stats</p>
+                                <div class="d-flex justify-content-between my-stats__inner">
+                                    <div class="item d-flex flex-column align-items-center justify-content-center flex-fill">
+                                        <img src="img/posts.svg" alt="Posts" width="60">
+                                        <p class="text-light-black font-weight-bold">0</p>
+                                        <p class="text-light-black text-uppercase">POSTS</p>
+                                    </div>
+                                    <div class="item d-flex flex-column align-items-center justify-content-center flex-fill">
+                                        <img src="img/followers.svg" alt="Posts" width="60">
+                                        <p class="text-light-black font-weight-bold">0</p>
+                                        <p class="text-light-black text-uppercase">Following</p>
+                                    </div>
+                                    <div class="item d-flex flex-column align-items-center justify-content-center flex-fill">
+                                        <img src="img/following.svg" alt="Posts" width="60">
+                                        <p class="text-light-black font-weight-bold">0</p>
+                                        <p class="text-light-black text-uppercase">Followers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-sm-3 px-0 col-lg-8 d-flex align-items-stretch">
+                        <div class="bg-white block__profile-right w-100">
+
+                            <div class="main-wrap bg-white search-filter py-5"> 
+                                <ul class="search-list pl-md-3" id="searchList" data-filter-group="category">
+                                    <li class="active" data-filter="">
+                                        <a>All</a>
+                                    </li>
+                                    <li data-filter=".post">
+                                        <a>Shop (0)</a>
+                                    </li>
+                                    <li data-filter=".products">
+                                        <a>Social (0)</a>
+                                    </li>
+                                    <li data-filter=".users">
+                                        <a>My Saved Posts (10)</a>
+                                    </li>
+                                </ul>                        
+
+                                <div class="search-products container py-md-5 py-4">
+                                    <div class="avail-products d-none">  
+                                        <div class="list items grid">
+                                            <div class=" list__item friends-post">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg1.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a ><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" list__item post">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg2.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" list__item products">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg3.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" list__item users">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg4.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" list__item post">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg5.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                    
+                                            <div class=" list__item users">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg6.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                           
+                                            <div class=" list__item friends-post">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg7.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                               
+                                            <div class=" list__item post">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg8.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" list__item users">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg9.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                   
+                                            <div class=" list__item users">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg10.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                       
+                                            <div class=" list__item products">
+                                                <div class="pro-box">
+                                                    <div class="pro-img">
+                                                        <img src="img/product/productimg11.png">
+                                                        <div class="pro-title"><h3>Great Kindle Dupe!</h3></div>
+                                                        <div class="pro-cart">
+                                                            <a><img src="img/pro-cart.svg"></a>
+                                                        </div>
+                                                        <div class="pro-list">
+                                                            <a><img src="img/list-icon.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prolist-cont">
+                                                        <div class="pro-des">
+                                                            <p>I was looking around for a Kindle after hearing about my friend rave about it, and I found it in the Amazon best shel ...</p>
+                                                        </div>
+                                                        <div class="pro-user">
+                                                            <div class="user-box">
+                                                                <div class="user-img">
+                                                                    <img src="img/user-img.png">		
+                                                                </div>
+                                                                <div class="user-detail">
+                                                                    <h4>Rachel Ng </h4>		
+                                                                    <span>from New Zealand</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fav-icon">
+                                                                <span class="heart-icon"><img src="img/heart.svg"></span>
+                                                                <span class="fav-count">0</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                           
+                                        </div>  
+
+                                        <div class="load-more text-center">
+                                            <a id="loadMore">Load More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="no-results pt-4 px-3">
+                                        <div class="row d-flex align-items-center justify-content-center">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <img class="img-fluid" src="img/hello.png" alt="Hello">
+                                                <h4 class="font-weight-bold mt-3 mb-2 text-center">Hey there! We noticed that you don’t have any posts yet.</h4>
+                                                <a class="text-pink">Find out why you should join in the fun</a>
+                                                <a class="btn btn--fill btn--create-post mt-4" href="javascript:void(0);">Create post</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-inner">
+                    <div class="col-md-3 footer-blc">
+                        <h3>HELP</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Prohibited Items</a></li> 
+                        </ul>
+                        <div class="ft-contact"> 
+                            <h3>CONTACT US</h3> 
+                            <p>Get in touch with us at connect@aora.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 footer-blc">
+                        <h3>COMPANY</h3>
+                        <ul class="ft-menu">
+                            <li><a href="#">About Us</a></a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Merchant Directory</a></li>
+                            <li><a href="#">Privacy Policy</a></li> 
+                            <li><a href="#">Terms & Conditions</a></li>   
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 footer-blc">
+                        <h3>FOLLOW</h3>
+                        <ul class="ft-follows">
+                            <li><a href="#"><img src="img/fb-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/radite-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/twitt-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/ft-print.svg"></a></li>
+                            <li><a href="#"><img src="img/youtube.svg"></a></li>  
+                        </ul>
+                    </div>  
+
+                </div>
+                <div class="row footer-bottom"> 
+                    <div class="col-md-10 footer-blc">
+                        <h3>WE ACCEPT:</h3>
+                        <ul class="ft-accept">
+                            <li><a href="#"><img src="img/master-card.svg"></a></li>
+                            <li><a href="#"><img src="img/visa-card.svg"></a></li>
+                            <li><a href="#"><img src="img/amer-card.svg"></a></li>
+                            <li><a href="#"><img src="img/jbc.svg"></a></li>
+                            <li><a href="#"><img src="img/dinerclub.svg"></a></li>  
+                            <li><a href="#"><img src="img/b-icon.svg"></a></li>   
+                            <li><a href="#"><img src="img/tring-icon.svg"></a></li>
+                            <li><a href="#"><img src="img/aoura-gold.svg"></a></li> 
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footer-blc">
+                        <h3>POWERED BY: </h3>
+                        <ul class="ft-accept">
+                            <li><a href="#"><img src="img/powerby.svg"></a></li>
+                        </ul>
+                    </div> 
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+
+        <div class="hide" id="overlay"></div>
+        <!-- Edit profile -->
+        <div class="modal fade edit-profile-modal" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLable" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">+ Upload</label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="d-flex justify-content-start">
+                                <li>
+                                    <a><img src="img/edit-profile.svg" alt="" width="10"> Edit</a>
+                                </li>
+                                <li class="ml-3">
+                                    <a><img src="img/crop.svg" alt="" width="10"> Crop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn--fill btn-primary">Save </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- delete --> 
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+</html>
