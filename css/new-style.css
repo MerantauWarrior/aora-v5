@@ -99,19 +99,23 @@ body{
     border-radius: 20px;
 }
 .inp-landing-cta::-webkit-input-placeholder {
-    font-size: 13px;line-height: 55px;
+    line-height: 47px;
+    font-size: 13px;
     color: #20283F;
 }
 .inp-landing-cta::-moz-placeholder {
-    font-size: 13px;line-height: 55px;
+    line-height: 47px;
+    font-size: 13px;
     color: #20283F;
 }
 .inp-landing-cta:-ms-input-placeholder {
-    font-size: 13px;line-height: 55px;
+    line-height: 47px;
+    font-size: 13px;
     color: #20283F;
 }
 .inp-landing-cta:-moz-placeholder {
-    font-size: 13px;line-height: 55px;
+    line-height: 47px;
+    font-size: 13px;
     color: #20283F;
 }
 .btn-landing-cta{
