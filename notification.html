@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
@@ -7,196 +7,167 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
         <meta name="format-detection" content="telephone=no">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style-new.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/new-style.css" rel="stylesheet">
+        <link href="css/header-footer.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     </head>
 
     <body id="body" class="page innerpage">
 
-         <header class="header" id="header">
-            <div class="header-inner">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-3 col-sm-4 header-left">
-                            <div class="main-menu">
-                                <nav class="navbar">
-                                    <button type="button" id="sidebarCollapse" class="menu-bar">
-                                        <img src="img/menubars.svg" alt="aora">
-                                    </button>
-                                </nav>
-                            </div>
-                            <div class="logo">
-                                <a href="index.html"><img src="img/logo.svg" alt="aora"></a> 
+    <header class="main-header">
+        <div class="main-header-mobile">
+            <div class="main-header-mobile__open">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main-header-mobile__logo"><img src="imgs/new-logo.svg" alt="aora"></div>
+            <div class="main-header-mobile__menu">
+                <div class="main-header-mobile__menu-block">
+                    <a href="#" class="main-header-mobile__menu-link js_open_modal" data-modal="#login_modal">LOG IN | SIGN UP</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="https://aora.cf" class="main-header-mobile__menu-link">HOME</a>
+                    <a href="how-aora-work" class="main-header-mobile__menu-link">HOW AORA WORKS</a>
+                    <a href="about" class="main-header-mobile__menu-link">ABOUT US</a>
+                    <a class="main-header-mobile__menu-link" href="user/invite">REFER A FRIEND</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="setting" class="main-header-mobile__menu-link">MY ACCOUNT</a>
+                    <a href="orders" class="main-header-mobile__menu-link">ORDERS</a>
+                </div>
+                <div class="main-header-mobile__menu-block">
+                    <a href="contact" class="main-header-mobile__menu-link">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <ul class="page-header__top-list">
+            <li class="page-header__top-list-item js_open_modal" data-modal="#login_modal">
+                <a href="#" class="page-header__top-list-link">
+                    <img src="imgs/account.svg" alt="">
+                    <span class="page-header__top-list-text">Log In | Sign Up</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item">
+                <a href="#" class="page-header__top-list-link">
+                    <img src="imgs/orders.svg" alt="">
+                    <span class="page-header__top-list-text">Orders</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item">
+                <a href="cart" class="page-header__top-list-link">
+                    <img src="imgs/cart.svg" alt="">
+                    <span class="page-header__top-list-text">Cart</span>
+                    <span class="page-header__top-list-indicator">2</span>
+                </a>
+            </li>
+            <li class="page-header__top-list-item notifications-h">
+                <a href="cart" class="page-header__top-list-link">
+                    <img src="imgs/icon-notifications.svg" alt="">
+                    <span class="page-header__top-list-notifications">9</span>
+                </a>
+                <div class="drop-notification text-left">
+                    <div class="notification-head">Notification</div>
+                    <div class="notification-title">New</div>
+                    <div class="notification_listwrap">
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user1.png">
+                                        <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="head-search col-lg-4 col-md-5 col-sm-4">
-                            <div class="form-container">
-                                <form class="form">
-                                    <input class="form__input" type="text" placeholder="Search Marketplace or Paste Product URL ">
-                                    <button class="form__submit" type="submit"><img src="img/search-icon.svg"></button>
-                                </form>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user2.png">
+                                        <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 col-md-4 col-sm-8 header-right text-right">
-                            <div class="right-menu">
-                                <ul>
-                                    <li class="search-results d-md-none d-inline-block"><a><span></span></a></li>                                    
-                                    <li class="cre-post"><a href="create-post.html"><span>Create Post</span></a></li>
-                                    <li class="hw-work" style="display: none"><a href="#"><span>How AORA <br>Works</span></a></li>
-                                    <li class="signup" style="display: none"><a href="#"><span>Sign up/<br>Log in</span></a></li>
-                                    <li class="my-account"><a href="#"><span>My Account</span></a>
-                                        <div class="dropdown">
-                                            <ul>
-                                                <li><a href="#">My account</a></li>
-                                                <li><a href="#">My profile</a></li>
-                                                <li><a href="#">My orders</a></li>
-                                                <li><a href="#">Help</a></li>
-                                                <li class="logout"><a href="#">Logout</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="cart"><a href="#"><span>Cart</span></a></li>
-
-                                    <li class="notification">
-                                        <a href="notification.html"><img src="img/not-icon.svg" alt="aora"><span class="not-count">9</span></a>
-
-                                        <div class="drop-notification text-left">
-                                            <div class="notification-head">Notification</div>
-                                            <div class="notification-title">New</div>
-                                            <div class="notification_listwrap">
-                                                <div class="notification-list">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
-                                                            <div class="notification-user">
-                                                                <img src="img/user/nt-user1.png">
-                                                                <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
-                                                            </div>
-                                                            <div class="notification-detail">
-                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
-                                                                <span class="use-time">1 hour ago</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
-                                                            <div class="notification-user-pro">
-                                                                <img src="img/user/use-prod1.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="notification-list">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
-                                                            <div class="notification-user">
-                                                                <img src="img/user/nt-user2.png">
-                                                                <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
-                                                            </div>
-                                                            <div class="notification-detail">
-                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
-                                                                <span class="use-time">1 hour ago</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
-                                                            <div class="notification-user-pro">
-                                                                <img src="img/user/use-prod1.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="notification-title"><a href="#">Earlier</a></div>
-
-                                                <div class="notification-list">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
-                                                            <div class="notification-user">
-                                                                <img src="img/user/nt-user1.png">
-                                                                <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
-                                                            </div>
-                                                            <div class="notification-detail">
-                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
-                                                                <span class="use-time">1 hour ago</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-4 notification-list-rt">
-                                                            <div class="notification-user-pro">
-                                                                <img src="img/user/use-prod1.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="notification-list">
-                                                    <div class="row">
-                                                        <div class="col-md-9 col-sm-8 notification-list-lt">
-                                                            <div class="notification-user">
-                                                                <img src="img/user/nt-user2.png">
-                                                                <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
-                                                            </div>
-                                                            <div class="notification-detail">
-                                                                <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
-                                                                <span class="use-time">1 hour ago</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3 col-sm-4 not-list-rt">
-                                                            <div class="notification-user-pro">
-                                                                <img src="img/user/use-prod1.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="notification-title"><a href="notification.html">See all</a></div>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <div class="notification-title"><a href="#">Earlier</a></div>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user1.png">
+                                        <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user2.png">
+                                        <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 not-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="notification-title"><a href="notification.html">See all</a></div>
                 </div>
-            </div>
-
-            <div id="sidebar">
-                <div class="sidebar-header">
-                    <img src="img/white-logo.svg" alt="aora">
-                    <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
-                </div>
-                <div class="side-contant">
-
-                    <ul class="side-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="create-post.html">Create a post</a></li>
-                        <li><a href="javascript:;">My Account</a>
-                            <ul class="sidesubmenu">
-                                <li><a href="profile.html">My Profile</a></li>
-                                <li><a href="my-earnings.html">My earnings</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:;">My orders</a>
-                            <ul class="sidesubmenu">
-                                <li><a href="">Quotes in process</a></li>
-                                <li><a href="">Live Orders</a></li>
-                                <li><a href="">Past Orders</a></li>
-                                <li><a href="">Cancelled Orders</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Help?</a>
-                            <ul class="sidesubmenu">
-                                <li><a href="">How aora works</a></li>
-                                <li><a href="">Faq</a></li>
-                                <li><a href="">Contact us</a></li>
-                                <li><a href="">About us</a></li>
-                            </ul>
-                        </li>
-                        <li class="logout"><a href="#">Logout</a></li>
-                    </ul>
-
-                </div>
-            </div>
-
-        </header>
+            </li>
+        </ul>
+        <div class="main-header__controls">
+            <div class="main-header__logo"><a href="https://aora.cf"><img src="imgs/new-logo.svg" alt="aora"></a></div>
+            <nav class="main-header__menu">
+                <a class="main-header__menu-link" href="https://aora.cf">HOME</a>
+                <a class="main-header__menu-link " href="#how-aora-work">HOW AORA WORKS</a>
+                <a class="main-header__menu-link " href="#how-aora-work">
+                    <img src="imgs/icon-tel.svg" class="main-header__menu-tel">Contact Us</a>
+            </nav>
+            <form id="header_search_form" class="main-header__search main-header__search-landing" method="post" action="result">
+                <input type="text" name="link" id="search" class="inp-main-header__search" placeholder="Paste Product URL Here">
+                <button type="submit" class="submit-main-header__search"></button>
+            </form>
+        </div>
+    </header>
 
         <div class="main-wrap">
             <div class="notifi-wrap">
@@ -220,8 +191,8 @@
                                                     <lable>Comments</lable>
                                                     </li>
                                                     <li>
-                                                        <input type="checkbox" name="creatpost">
-                                                    <lable>Creat Post</lable>
+                                                        <input type="checkbox" name="createpost">
+                                                    <lable>Create Post</lable>
                                                     </li>
                                                     <li>
                                                         <input type="checkbox" name="likes">
@@ -307,140 +278,82 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row footer-inner">
-                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc">
-                        <h3>Help</h3>
-                        <ul class="ft-menu">
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Prohibited Items</a></li>
-                        </ul>
-                        <div class="ft-contact">
-                            <h3>Contact Us</h3>
-                            <p>Get in touch with us at connect@aora.com</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc">
-                        <h3>Company</h3>
-                        <ul class="ft-menu">
-                            <li><a href="#">About Us</a></a>
-                            </li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Merchant Directory</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-6 footer-blc mobile-display">
-                        <h3>Powered by: </h3>
-                        <ul class="ft-accept">
-                            <li>
-                                <a href="#"><img src="img/mb-powerby.png"></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-6 footer-blc footer-follow">
-                        <h3>Follow</h3>
-                        <ul class="ft-follows">
-                            <li>
-                                <a href="#"><img src="img/fb-icon.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/radite-icon.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/twitt-icon.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/ft-print.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/youtube.svg"></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="row footer-bottom">
-                    <div class="col-md-10 footer-blc accept_logo">
-                        <h3>We accept:</h3>
-                        <ul class="ft-accept">
-                            <li>
-                                <a href="#"><img src="img/master-card.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/visa-card.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/amer-card.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/jbc.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/dinerclub.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/b-icon.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/tring-icon.svg"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/aoura-gold.svg"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 footer-blc">
-                        <h3>Powered by: </h3>
-                        <ul class="ft-accept">
-                            <li>
-                                <a href="#"><img src="img/powerby.svg"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="new-footer">
+      <div class="new-footer__inner">
+        <div class="new-footer__menu">
+          <div class="new-footer__menu-item">
+            <div class="new-footer-title">help</div>
+            <ul class="new-footer__menu-list">
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">FAQs</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Prohibited Items</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="new-footer__menu-item">
+            <div class="new-footer-title">company</div>
+            <ul class="new-footer__menu-list">
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">About Us</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Blog</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Merchant Directory</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Privacy Policy</a></li>
+              <li class="new-footer__menu-list-item"><a href="#" class="new-footer__menu-link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="new-footer__icons">
+          <div class="new-footer__icons-join">
+            <div class="new-footer-title">join our community</div>
+            <div class="new-footer__icons-join-items">
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/fb.svg" alt="facebook">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/insta.svg" alt="instagram">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/medium.svg" alt="medium">
+              </a>
+              <a href="#" class="new-footer__icons-join-item">
+                <img src="imgs/footer/reddit.svg" alt="reddit">
+              </a>
             </div>
-        </footer>
+          </div>
+          <div class="new-footer__icons-payment">
+            <div class="new-footer-title">our payment partners:</div>
+            <div class="new-footer__icons-payment-items">
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/stripe.svg" alt="stripe"></a>
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/bit.svg" alt="bit"></a></br>
+              <a href="#" class="new-footer__icons-payment-item"><img src="imgs/footer/coin.svg" alt="coin"></a>
+            </div>
+          </div>
+          <div class="new-footer__icons-powered">
+            <div class="new-footer-title">powered by:</div>
+            <a href="#" class="new-footer__icons-powered-item">
+              <img src="imgs/footer/singapore.svg" alt="singapore post">
+            </a>
+          </div>
+        </div>
+        <div class="new-footer__accept">
+          <div class="new-footer-title">we accept:</div>
+          <div class="new-footer__accept-items">
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa1.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa2.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa3.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa4.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa5.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa6.svg" alt="pay-name"></a>
+            <a href="#" class="new-footer__accept-item"><img src="imgs/footer/wa7.svg" alt="pay-name"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
         <script src="js/bootstrap.js"></script>
         <script src="js/fontawesome.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                });
-            });
-        </script>
-        <script>
-            window.onscroll = function () {
-                myFunction()
-            };
+    <script type="text/javascript" src="js/my-scripts.js"></script>
 
-            var header = document.getElementById("header");
-            var sticky = header.offsetTop;
-            var body = document.getElementById("body");
-            var sticky = body.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-                if (window.pageYOffset > sticky) {
-                    body.classList.add("sticky");
-                } else {
-                    body.classList.remove("sticky");
-                }
-            }
-        </script>
     </body>
 
 </html>

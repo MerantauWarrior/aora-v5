@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Aora - main page</title>
@@ -192,8 +192,8 @@
       <div class="landing-cta__text-two">With trusted delivery to over 100 countries direct to your doorstep</div>
       <form name="landing-form" method="post" action="https://aora.cf/result" class="landing-cta__form" id="myForm">
         <input type="text" name="cta-search" id="cta-search" class="inp-landing-cta"
-               placeholder="Copy & Paste Product Page URL Here">
-        <button class="btn-landing-cta" type="submit">add to cart</button>
+               placeholder="Search Marketplace or Paste Product URL">
+        <button class="btn-landing-cta" type="submit">Let's go</button>
       </form>
     </div>
   </div>
@@ -237,11 +237,11 @@
           </div>
           <div class="landing-benefits__item">
             <div class="landing-benefits__img"><img src="imgs/landing/benefits/benefits-7.svg" alt=""></div>
-            <div class="landing-benefits__text">Discover great products from the US and more</div>
+            <div class="landing-benefits__text">Discover great<br> products from<br> the US and more</div>
           </div>
           <div class="landing-benefits__item">
             <div class="landing-benefits__img"><img src="imgs/landing/benefits/benefits-8.svg" alt=""></div>
-            <div class="landing-benefits__text">Read thousands of authentic reviews on a single platform</div>
+            <div class="landing-benefits__text">Read thousands of<br> authentic reviews<br> on a single platform</div>
           </div>
         </div>
         <a href="#" class="landing-benefits__btn">find out more</a>
@@ -313,7 +313,7 @@
                 <div class="filter-content-item">
                   <input type="checkbox" name="products" value=".products" id="products">
                   <label class="filter-content-label" for="products">
-                    <img src="img/watch.svg" alt="" class="filter-content-item-img">
+                    <img src="img/icon-watch.png" alt="" class="filter-content-item-img">
                     <span class="filter-content-item-text">ACCESSORIES</span>
                   </label>
                 </div>
@@ -341,7 +341,7 @@
                 <div class="filter-content-item">
                   <input type="checkbox" name="" value="" id="">
                   <label class="filter-content-label" for="">
-                    <img src="img/babykids.svg" alt="" class="filter-content-item-img">
+                    <img src="img/icon-babies.png" alt="" class="filter-content-item-img">
                     <span class="filter-content-item-text">BABIES & <br>KIDS</span>
                   </label>
                 </div>
@@ -391,7 +391,7 @@
             </div>
 
             <div class="filt-shortby">
-              <h3>Short by</h3>
+              <h3>Sort by</h3>
               <ul>
                 <li>
                   <a href="javascript:;">Latest</a>
@@ -419,7 +419,6 @@
                 </div>
                 <div class="pro-list">
                   <a><img src="img/list-icon.svg"></a>
-
                 </div>
               </div>
               <div class="prolist-cont">
@@ -917,7 +916,7 @@
             <p class=" text-dark">AORA will be sad to see it go.</p>
 
             <div class="d-flex justify-content-sm-start justify-content-center mt-3">
-              <button class="text-uppercase btn btn--go-back mr-3" data-dismiss="modal" aria-label="Close">Go Back
+              <button class="text-uppercase btn btn--go-back mr-4" data-dismiss="modal" aria-label="Close">Go Back
               </button>
               <button class="text-uppercase text-white btn btn--delete-post">Delete Post</button>
             </div>
@@ -980,8 +979,29 @@
 
       }
     })
+    /*isotope new mechanix*/
+    var $container = $('#container'),
+      $checkboxes = $('#filters input');
+    $container.isotope({
+      itemSelector: '.list__item'
+    });
+    var isotope = $container.data('isotope');
+    function addEvenClasses() {
+      isotope.$filteredAtoms.each( function( i, elem ) {
+        $(elem)[ ( i % 2 ? 'addClass' : 'removeClass' ) ]('even')
+      });
+    }
+    $checkboxes.change(function(){
+      var filters = [];
+      $checkboxes.filter(':checked').each(function(){
+        filters.push( this.value );
+      });
+      filters = filters.join(', ');
+      $container.isotope({ filter: filters });
+      addEvenClasses();
+    });
 
-  })
+  });
 </script>
 </body>
 </html>

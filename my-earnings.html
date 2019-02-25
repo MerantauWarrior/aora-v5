@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>AORA</title>
@@ -10,6 +10,7 @@
         <link href="css/new-style.css" rel="stylesheet">
         <link href="css/header-footer.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     </head>
 
     <body>
@@ -62,11 +63,95 @@
                     <span class="page-header__top-list-indicator">2</span>
                 </a>
             </li>
-            <li class="page-header__top-list-item">
+            <li class="page-header__top-list-item notifications-h">
                 <a href="cart" class="page-header__top-list-link">
                     <img src="imgs/icon-notifications.svg" alt="">
                     <span class="page-header__top-list-notifications">9</span>
                 </a>
+                <div class="drop-notification text-left">
+                    <div class="notification-head">Notification</div>
+                    <div class="notification-title">New</div>
+                    <div class="notification_listwrap">
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user1.png">
+                                        <span class="notification-icon pink-cir"><img src="img/view.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user2.png">
+                                        <span class="notification-icon green-cir"><img src="img/lock-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-title"><a href="#">Earlier</a></div>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user1.png">
+                                        <span class="notification-icon yellow-cir"><img src="img/chat-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 notification-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notification-list">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8 notification-list-lt">
+                                    <div class="notification-user">
+                                        <img src="img/user/nt-user2.png">
+                                        <span class="notification-icon red-cir"><img src="img/heart-icon.png" ></span>
+                                    </div>
+                                    <div class="notification-detail">
+                                        <p><strong>Alice Woo</strong> created a new post, <strong>Kylie Lipstick Dupe</strong></p>
+                                        <span class="use-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 not-list-rt">
+                                    <div class="notification-user-pro">
+                                        <img src="img/user/use-prod1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification-title"><a href="notification.html">See all</a></div>
+                </div>
             </li>
         </ul>
         <div class="main-header__controls">
@@ -231,7 +316,8 @@
                                             </div>
                                         </div>
 
-                                        <nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-end">
+                                        <nav aria-label="Page navigation example"
+                                             class="mt-4 d-flex justify-content-center justify-content-lg-end">
                                             <ul class="pagination">
                                                 <li class="page-item disabled">
                                                     <a class="page-link" href="#" aria-label="Previous">
@@ -294,12 +380,13 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Account Holder Name</label>
-                                                            <input type="text" class="form-control" placeholder="Your Name, As Stated On Your Bank Records">
+                                                            <input type="text" class="form-control js-empty error"
+                                                                   placeholder="Please enter valid details">
                                                             <div class="error-text"></div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Bank Account Number (Without Hypen or Space)</label>
-                                                            <input type="text" class="form-control" placeholder="Your Name, As Stated On Your Bank Records">
+                                                            <input type="text" class="form-control" placeholder="">
                                                         </div>
                                                         <div class="d-flex justify-content-end mt-lg-5 mt-4">
                                                             <a class="btn btn--blue" id="requestSubmittedBtn" data-toggle="modal" data-target="#requestSubmittedModal" data-dismiss="modal" aria-label="Close">SAVE</a>
@@ -338,8 +425,9 @@
                                             <div class="font-weight-500">(Minimum SGD $5)</div>
                                         </div>
                                         <form class="amount-form mt-3" action="">
-                                            <div class="form-group success">
-                                                <input class="form-control" type="text" name="amount" placeholder="E.g $15">
+                                            <div class="form-group">
+                                                <input class="form-control js-earnings" type="text" name="amount"
+                                                       placeholder="E.g $15">
                                             </div>
                                             <button type="button" class="btn btn--fill">Redeem</button>
                                         </form>
@@ -351,13 +439,10 @@
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-body">
-                                                <button type="button" id="goBackBtn" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
                                                 <div class="py-5 px-md-3 px-0">
                                                     <p class=" px-md-5 px-3 mb-3 text-center text-pink font-weight-bold">Oops, we are unable to transfer your points into cash at the moment</p>   
                                                     <p class="text-light-black text-center">Our AORA Points to Cash function is not available for countries outside of Singapore at the moment, but we will be looking to bring it to your country very soon!</p>
-                                                    <div class="btns d-flex justify-content-between mt-4">
+                                                    <div class="btns d-flex justify-content-lg-between mt-4">
                                                         <button class="btn btn--grey mr-2 flex-fill" id="goBackBtn" data-dismiss="modal" aria-label="Close">Go back</button>
                                                         <button class="btn btn--blue ml-2 flex-fill js-proceed-anyway" data-dismiss="modal" aria-label="Close">Proceed Anyway</button>
                                                     </div>  

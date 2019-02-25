@@ -72,8 +72,8 @@ $(document).ready(function () {
         if (window.matchMedia("(max-width: 767px)").matches) {
             $('.earnings__block .dropdown-list').on('click', function () {
                 $('.earnings__inner-block').toggleClass('d-block mt-2');
-                $('.caret-up').toggleClass('d-none');
-                $('.caret-down').toggleClass('d-inline-block');
+                $('.caret-down').toggleClass('d-none');
+                $('.caret-up').toggleClass('d-inline-block');
             });
         }
     }
@@ -85,25 +85,41 @@ $(document).ready(function () {
     $('.search-results').on('click', function () {
         $('.head-search').addClass('show');
     });
-    $('.pro-img').on('click', function () {
+    $(document).on('click', '.pro-img', function () {
         $('.product-menu').remove();
     });
-    $('.pro-list a img').on('hover click', function (e) {
+    $(document).on('hover click', '.pro-list a img', function (e) {
         e.preventDefault();
         e.stopPropagation();
-        if ($('.product-menu').hasClass('product-menu')) {
+        if($('body').hasClass('my-profile')){
+          if ($('.product-menu').hasClass('product-menu')) {
             $('.product-menu').remove();
-        } else {
+          } else {
             $(this).parent().append(
-                '<div class="product-menu">'
-                + '<ul>'
-                + '<li class="for-close"><a>Edit</a></li>'
-                + '<li class="for-close" data-toggle="modal" data-target="#deletePostModal"><a>Delete</a></li>'
-                + '<li class="for-close"><a>Cancel</a></li>'
-                + '</ul>'
-                + '</div>');
+              '<div class="product-menu">'
+              + '<ul>'
+              + '<li class="for-close"><a>Edit</a></li>'
+              + '<li class="for-close"><a>Delete</a></li>'
+              + '<li class="for-close"><a>Cancel</a></li>'
+              + '</ul>'
+              + '</div>');
+          }
+        }else{
+          if ($('.product-menu').hasClass('product-menu')) {
+            $('.product-menu').remove();
+          } else {
+            $(this).parent().append(
+              '<div class="product-menu">'
+              + '<ul>'
+              + '<li class="for-close"><a>Report&nbsp;Inappropriate</a></li>'
+              + '<li class="for-close"><a>Copy Link</a></li>'
+              + '<li class="for-close"><a>Save Post</a></li>'
+              + '<li class="for-close"><a>Cancel</a></li>'
+              + '</ul>'
+              + '</div>');
+          }
         }
-    })
+    });
     $('.nav-link').on('click', function () {
         $('.nav-link').removeClass('active show');
         $(this).tab('show');
@@ -244,19 +260,14 @@ $(document).ready(function () {
             value: function uploadImage(e) {
                 var fileInput = e.target;
                 var uploadBtn = fileInput.parentNode;
-                // var deleteBtn = uploadBtn.children;
                 var deleteBtn = uploadBtn.querySelectorAll('.photo_submit-delete')[0];
-
                 var reader = new FileReader();
-
                 reader.onload = function (e) {
                     uploadBtn.setAttribute('style', 'background-image: url(\'' + e.target.result + '\');');
                     uploadBtn.classList.add('photo_submit--image');
                     fileInput.setAttribute('disabled', 'disabled');
-                    console.log(deleteBtn);
                   deleteBtn.classList.remove('d-none');
                 };
-
                 reader.readAsDataURL(e.target.files[0]);
             }
         }]);
@@ -264,16 +275,19 @@ $(document).ready(function () {
         return PhotoSubmission;
     }();
 
-    ;
-
     new PhotoSubmission();
 
-    $('.photo_submit-delete').on('click', function (e) {
+    $(document).on( 'click', '#add_more_product', function(){
+      new PhotoSubmission();
+    } );
+
+    $(document).on('click', '.photo_submit-delete', function (e) {
         e.preventDefault();
         e.stopPropagation();
         $(this).parent().parent().find('.deletePostModal').modal('show');
+        console.log($(this).parent().parent());
     });
-    $('.btn--delete-photo').on('click', function (e) {
+    $(document).on('click', '.btn--delete-photo', function (e) {
         e.preventDefault();
         $('.deletePostModal').modal('hide');
         var custom_file = $(this).closest('.custom-file');

@@ -149,6 +149,7 @@ body{
     position: relative;
     width: 100%;
     max-width: 555px;
+    min-height: 267px;
     margin-top: -20px;
     padding: 20px 0 18px 22px;
     background-color: #00B6B8;
@@ -174,6 +175,7 @@ body{
     position: relative;
     width: 100%;
     max-width: 555px;
+    min-height: 267px;
     padding: 20px 22px 18px 0;
     background-color: #EE436A;
     text-align: right;
@@ -207,9 +209,22 @@ body{
     padding: 0 5px;
 }
 .landing-benefits__part-two .landing-benefits__item:first-child{
-    width: calc(25% + 25px);
-    margin-left: -25px;
+    width: 140px;
+    margin-left: -40px;
 }
+.landing-benefits__part-two .landing-benefits__item:nth-child(2){
+    width: calc(25% + 40px);
+    margin-right: -10px;
+    margin-bottom: 15px;
+}
+.landing-benefits__part-two .landing-benefits__item:nth-child(3){
+    padding-right: 10px;
+}
+.landing-benefits__part-two .landing-benefits__item:nth-child(4){
+    width: calc(25% + 10px);
+    margin-left: -10px;
+}
+
 .landing-benefits__img{
     display: inline-block;
     width: 69px;
@@ -275,6 +290,7 @@ body{
     margin-right: 40px;
 }
 .landing-circle__text-one{
+    margin-top: 4px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -391,6 +407,9 @@ body{
     font-size: 13px;
     cursor: pointer;
 }
+.filter-content-label .filter-content-item-img{
+    border: 1px solid transparent;
+}
 input[type="checkbox"]:checked + .filter-content-label .filter-content-item-img{
     border: 1px solid #d72a51;
 }
@@ -418,7 +437,7 @@ input[type="checkbox"]:checked + .filter-content-label .filter-content-item-img{
     color: #3B3838;
 }
 .select-init{
-    color: #C4C4C4;
+    /*color: #C4C4C4;*/
 }
 .usd-drop{
     border-top:none;
@@ -434,6 +453,104 @@ input[type="checkbox"]:checked + .filter-content-label .filter-content-item-img{
 }
 .error-text{
     display: none;
+}
+.form__post-category .select{
+    width: 280px;
+    vertical-align: top;
+}
+.remove_category{
+    margin-left: 15px;
+}
+.list__tag-products {
+    flex-wrap: wrap;
+}
+.product-menu ul{
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.product-menu ul li:not(:last-child) {
+    border-bottom: 1px solid #C4C4C4;
+}
+.product-menu a{
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 10.5px;
+    text-align: center;
+    color: #3B3838 !important;
+}
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+.fav-icon {
+    text-align: right;
+}
+.add-photo p{
+    text-transform: none;
+}
+.add-product-photo .modal button,
+.add-photo .modal button{
+    line-height:normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.select-options li:empty{
+    display: none;
+}
+.or{
+    color: #6B6969;
+}
+.or + .select{
+    vertical-align: middle;
+    max-width: 300px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #00B6B8 ;
+}
+.or + .select *{
+    font-size: 13px;
+}
+.or + .select .select-styled:after {
+    border-color: #00B6B8 transparent transparent transparent;
+}
+.or + .select .select-styled:active:after, .or + .select .select-styled.active:after {
+    top: 5px;
+    border-color: transparent transparent #00B6B8 transparent;
+}
+.form__tag-products .custom-file-label p{
+    text-align: center;
+}
+textarea{
+    max-height: 150px;
+}
+.page-product{
+    background-color: #fff !important;
+}
+.form-control.error::-webkit-input-placeholder {
+    color: #EE436A;
+}
+.form-control.error::-moz-placeholder {
+    color: #EE436A;
+}
+.form-control.error:-ms-input-placeholder {
+    color: #EE436A;
+}
+.form-control.error:-moz-placeholder {
+    color: #EE436A;
+}
+.my-profile-filter-right{
+    margin-left: auto;
+}
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "";
+}
+#editProfileModal.modal button.close{
+    right: -10px;
+    top: -10px;
 }
 
 /*
@@ -475,6 +592,16 @@ tablets
     .photo_submit-delete {
         padding: 5px 10px;
         font-size: 10px;
+        font-weight: normal;
+    }
+    .my-profile-filter-right{
+        margin-left: 0;
+    }
+    .caret-up {
+        display: none;
+    }
+    .caret-down {
+        display: inline-block;
     }
 }
 /*
@@ -496,13 +623,84 @@ mobiles
         right: 0;
         width: 100%;
     }
+    /*other fixes*/
+    .search-filter .list__item {
+        width: 50%;
+        padding: 5px;
+    }
+    .add-product-photo{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .remove_category{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .modal-backdrop{
+        display: none;
+    }
+    .modal-body{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .pr-follow > div.follow_button {
+        margin-bottom: -60px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .pr-follow > div.follow_button.follow_button_hover {
+        margin-bottom: 0;
+        margin-top: -70px;
+    }
+    .sub-btn{
+        text-align: center;
+    }
+    .post_share{
+        position: relative;
+    }
+    .post_share:hover .b-share-product{
+        display: block;
+    }
+    .b-share-product{
+        right: -70px;
+    }
+    .b-share-product:before,
+    .b-share-product:after{
+        right: 70px;
+    }
+    .earning-table__block{
+        padding: 0 15px;
+    }
+    .popover{
+        display: none;
+    }
+    .block__profile .avail-products .list__item{
+        width: 50%;
+    }
+    .search-filter .search-list {
+        padding: 0 15px;
+    }
+    .search-list li{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .search-list li:nth-child(even){
+        margin-left: auto !important;
+    }
+    .search-list li:nth-child(odd){
+        margin-right: auto !important;
+    }
 }
 @media screen and (max-width: 767px) and (orientation: portrait){
     /*landing page*/
     .landing-benefits__item,
-    .landing-benefits__part-two .landing-benefits__item:first-child{
+    .landing-benefits__part-two .landing-benefits__item:first-child,
+    .landing-benefits__part-two .landing-benefits__item:nth-child(4),
+    .landing-benefits__part-two .landing-benefits__item:nth-child(2){
         width: 100%;
         margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .landing-cta{
         padding-bottom: 0;

@@ -59,26 +59,44 @@ $(document).ready(function () {
     $('.b-share-product__item-img-copied').show();
     $('.b-share-product__item.js-share-product').show();
   });
-  /*isotope new mechanix*/
-  var $container = $('#container'),
-    $checkboxes = $('#filters input');
-  $container.isotope({
-    itemSelector: '.list__item'
+  /*product*/
+  $('.sub-btn a').click(function (e) {
+    e.preventDefault();
+    var checked = $(this).parent().parent().find('input:checked').length;
+    if(checked > 0){
+      $(this).text('Submitted');
+      $(this).append('<i class="fa fa-check"></i>');
+    }
   });
-  var isotope = $container.data('isotope');
-  function addEvenClasses() {
-    isotope.$filteredAtoms.each( function( i, elem ) {
-      $(elem)[ ( i % 2 ? 'addClass' : 'removeClass' ) ]('even')
-    });
-  }
-  $checkboxes.change(function(){
-    var filters = [];
-    $checkboxes.filter(':checked').each(function(){
-      filters.push( this.value );
-    });
-    filters = filters.join(', ');
-    $container.isotope({ filter: filters });
-    addEvenClasses();
+  $('.post_share').on('click hover', function (e) {
+    e.preventDefault();
+    $(this).children('.b-share-product').show();
+    if($(this).children.is(':visible')){
+      $(this).children('.b-share-product').hide();
+    }
+  });
+  /*my earnings*/
+  $(window).scroll(function(){
+    scroll = $(window).scrollTop();
+    if (scroll >= 700 && scroll <= 750) {
+      $('.pop-info').trigger('click');
+    }
+  });
+  $(document).on('keyup blur','.js-earnings',function(){
+    var val = $(this).val();
+    if(isNaN(val) || val === ''){
+      $(this).parent().removeClass('success');
+    }else{
+      $(this).parent().addClass('success');
+    }
+  });
+  $(document).on('keyup blur','.js-empty',function(){
+    var val = $(this).val();
+    if(val !== ''){
+      $(this).removeClass('error');
+    }else{
+      $(this).addClass('error');
+    }
   });
 
 });
